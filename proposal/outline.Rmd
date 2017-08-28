@@ -1,0 +1,202 @@
+---
+title: \textbf{Species interactions in heterogeneous landscapes}
+author: 
+- name: Gaurav Kandlikar
+  affiliation: Dept. of Ecology & Evolutionary Biology- University of California, Los Angeles
+- name: \newline Committee  
+  affiliation: \hspace{11mm}\textbf{Dr. Nathan Kraft} (Chair), Dr. Jennifer Martiny, Dr. Lawren Sack, Dr. Felipe Zapata
+abstract: "\\textbf{Abstract:}  
+\\newline
+How do interactions between organisms and their environment influence the dynamics of ecological communities? Ecologists have long understood that species performance can be impacted by both their response to the abiotic variation and by their interactions with other organisms. In my dissertation I aim to experimentally investigate how species coexistence is impacted by plant resource use strategies (as summarized by functional traits) and species-specific interactions with soil microorganisms in an annual plant community in coastal California. A longstanding assumption has been that the coexistence of species with dissimilar functional traits is stabilized due to their distinct responses to environmental heterogeneity [@Adler_2013]. For Chapter 1 I plan to test this assumption using recent advances in coexistence theory that decompose the outcome of species interactions in patchy landscapes into coexistence-promoting stabilizing niche differences and fitness differences that drive competitive exclusion [@Chesson_2000]. Specifically, I propose to test whether functional trait differences are predictive of the similarity in the functional responses of species to environmental gradients. Another striking observation from nature is that individuals within a species can have vastly different phenotypes. Despite considerable interest, the consequences of this variation on species coexistence remain largely unclear [@Violle_2012; @Turcotte_2016]. For Chapter 2, I aim to investigate how intra-specific variation in functional traits might influence community dynamics beginning from understanding of how trait differences influence species coexistence generally. Over the past two decades, a great deal of research has also highlighted the role of soil microorganisms in shaping terrestrial plant communities [@Bever_2015]. A key insight to emerge from this line of inquiry is that plant species coexistence can be promoted when plants cultivate a soil microbial community that has more negative impacts on plants of the same species than on plants of other species, which is in agreement with traditional coexistence theory [@Chesson_2000; @Bever_2003]. Although these biotic interactions influence plant community dynamcics in nature in conjunction with abiotic factors, their effects are generally considered independently of one another [@van_der_Putten_2016]. For Chapter 3, I aim to demonstrate how the relative contributions of plant-plant competition and plant-microbe interactions can be jointly considered under the established coexistence framework of @Chesson_2008 via a critical review of existing plant-soil feedback literature. This thesis will involve novel applications of recent advances in theoretical ecology to plant community and itegrate the historically disjunct fields of plant competition and plant-microbe interactions."
+date: "15 August 2017"
+output:
+  bookdown::pdf_document2:
+    template: ~/grtools/svm-latex-ms.tex
+    toc: false
+fontfamily: mathpazo
+fontsize: 12pt
+header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow} \usepackage{graphicx,colortbl,xcolor}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
+csl: ecology.csl
+bibliography: bibliography.bib
+---
+
+\clearpage
+\raggedright
+
+## \textbf{Chapter 1: How do functional traits relate to species responses to variable environments?}
+
+*Additional collaborators: Andy Kleinhesselink (UCLA); Jonathan Levine (ETH-Zurich); Emily Curd (UCLA/Cal eDNA)*
+
+In the intro, write about microbial community as an envirnomental variable
+
+### Chapter 1 hypotheses
+
+\textbf{H\textsubscript{0}}: Species may respond identically to environmental variation, irrespective of functional traits. We may expect this pattern if the environmental gradient spans a single stress gradient axis such that all species perform poorly at some sites and well at others (Figure \ref{fig:ch1-hypotheses}a). 
+
+\textbf{H\textsubscript{1}}: Species may have idiosyncratic responses to the environmental gradient, but the response may be unrelated to species functional traits. There may be potential for the storage effect to promote species coexistence, but the degree of stablization would be uncorrelated to species' functional similarity (Figure \ref{fig:ch1-hypotheses}a). 
+
+\textbf{H\textsubscript{2}}: The idiosyncratic responses of species to environmental gradients may be correlated with their functional traits. This pattern may arise if the functional traits are indicative of species' environmental preference along the gradient sampled (Figure \ref{fig:ch1-hypotheses}a). 
+
+\textbf{H\textsubscript{3}}: Species similarity in some traits may correlate with similarity in response to certain environmental variables. For example, species' simiarlity in drought tolerance may predict their response to an aridity gradient but not to a light gradient, and species similarity in seed size may predict their response to a soil texture gradient but not an aridity gradient (Figure \ref{fig:ch1-hypotheses}b). 
+
+
+\begin{figure}[h]
+  \includegraphics[width=\textwidth]{img/ch01-hypotheses.pdf}
+  \label{fig:ch1-hypotheses}
+  \caption{Test}
+\end{figure}
+
+### Methods
+
+**Demographic response**: In 2015-2016, I planted seeds of 17 annual plant species (Table \ref{tab:table-species}) in a setup that allowed me to parameterize a simplified annual plant popuation growth model. Specifically, the population growth rate of species $j$ at site $x$ is modeled as a function of the germination rate $g_{j,x}$, a global seed-bank survival rate for each species $s_j$, low-density seed production $\lambda_{j,x}$, species response to competitors $r_{j,x}$, and the competitive neighborhood $\eta_x$: 
+
+$$\frac{N_{t+1,j,x}}{N_{t,j,x}} = (1-g_{j,x})*s_j +\frac{g_{j,x}*\lambda_{j,x}}{1+r_{j,x}*\eta_x}$$
+ 
+ 
+
+In this framework, environmental response can be parameterized in three ways: germination rate, the per-capita seed production in the absence of competitors, and a composite index that yields the expected population growth rate in the absence of competitors.   
+
+**Trait variation**: A suite of leaf, root, seed, and whole-plant functional traits (Table \ref{tab:ch1-traits}) were measured for twelve of the annual plant species in this experiment by @Kraft_2015. I will measure the same set of traits for the five remaining species according to the same protocols and will additionally measure leaf osmotic potential [@Bartlett_2012], stomatal index [@], and leaf vein density [@Sack_2013], all of which summarize components of leaf-level drought tolerance.   
+
+**Abiotic environmental variation**: We characterized various environmental variables at each of our experimental sites during the 2015-16 growing season. Soil physical and chemical properties were analysed by A&L Western Labs. Air temperature at each of the plots was measured with temperature data loggers (iButtons) that were placed inside PVC tubing to shield from solar radiation. The gravimetric water content was measured for each plot on 1 April 2016 (corresponding to the peak growing season for the majority of species that have an earlier phenology) and on 1 May 2016 (corresponding to peak growing season for a suite of later-phenology species).
+
+**Biotic environmental variation**: We characterized the variation in soil microbiota among our plots by using metagenomic sequencing to profile the diversity of bacteria, fungi, and small eukaryotes. Soil was sampled on 1 April 2016 and pooled from three equally spaced points within each experimental plot into a single sterlize 15 mL tube. Samples were stored at -80$^{\circ}$C until further processing. Total DNA was extracted using the MoBio Power Soil Extraction kit and PCRs were conducted using 16s rRNA primers for bacteria, fungal ITS primers, and 18s rRNA primers for small eukaryotes. Pooled samples were sequenced on the Illumina MiSeq platform at the UC-Berkeley sequencing facilities.   
+
+\medskip 
+
+**Analyses**: stuff
+
+### Preliminary results
+A large proportion of the species pairs had uncoupled demographic responses- in other words, most species pairs did not respond in the same way to the multivariate changes in environment across sites (Figure \ref{fig-ch1-result1})
+
+
+### What results might mean
+
+-- Robin Snyder talk- propose to do a simulation of how strong we expect trait-demography relationship to be accounting for "luck" when we know true strength
+
+## Chapter 2: How might trait plasticity in reponse to abiotic environment and competitors shape species' demographic responses to environment?
+
+- 
+
+### Methods
+
+### Preliminary results
+
+### What results might mean
+
+## Chapter 3: Considering the consequences of soil microbial communities on plant species dynamics under the modern coexistence framework
+
+*Additional collaborators: Emily Curd (Cal eDNA Consortium)*
+
+- There is mounting evidence that interactions between plants and microbes have the potential to influence plant community dynamics [@van_der_Putten_2016]. Microbes can have positive or negative impacts on plant performance.  
+
+- In an extreme case, @Redman_2002 showed that the Panic grass *Dichanthelium lanuginosum* was able to withstand sustained soil temperatures of 50 C when its roots were colonized by endophytic fungi in the genus *Curvularia*, but suffered 100% mortality when grown alone. As the grass naturally occurs in geothermal sites whose soils frequently reach >50  C in Yellowstone and Lassen Volcanic National Parks, it was shown that this microbial interactions was critical to determining plant performance in the field.
+
+- Soil microbes also have the potentially to severly harm plants. The oomycete *Phytophthora ramorum* caused dramatic declines in populations of tanoak (*Lithocarpus densiflorus*) and coast live oak (*Quercus agrifolia*) in coastal California and Oregon in the late 1990s [@Rizzo_2005], which continues to have profound impacts on the community and ecosystem dynamics in those systems [@Cobb_2013].
+
+- These above interactions are fundamentally about the plant response to their environment; in other words, these only consider the consequences of the environment on plant performance and not the impacts of plants on the soil microbiota. 
+
+- Feedbacks between plants and soil microbes may also have subtler mechanisms for affecting profound impacts on plant community dynamics. For example, @van_der_Putten_1993 suggest that plant succession in foredune communities is driven by the relative promotion of later-successional plant species in soil that are colonized by microbial communities cultivated by earlier-successional species.
+
+- In short, plant-microbe interactions have tremendous potential to influence the outcomes of species interactions and community assembly [@Bever_2015].
+
+- @Bever_1997 developed a fruitful theoretical framework to describe the consequences of plant-soil feedbacks on plant populations that has been extended by many subsequent theoretical and empirical studies [@Bever_2003; @Eppinga_2006; @Aguilera_2011]. Here, I present the fundamentals of this framework, highlight important results, and argue that considering plant-microbe interactions in the modern coexistence framework [@Chesson_2000] will help us better understand these interactions in realistic environmental contexts. 
+
+
+### Plant-soil feedbacks
+
+- PSFs operate when plant species "culture" a soil microbial community that in turn influences the performance of plants growing in that soil. 
+
+- The field of PSFs blossomed with two seminal studies in the early 1990s. 
+
+- First, @Bever_1994; 
+
+- Second @van_der_Putten_1993
+
+- @Bever_1997 proposed a theoretical framework to investigate these interactions in the classic Lotka-Volterra framework for a pair of competitively equivalent species. @Bever_2003 built upon this framework to describe the role of PSFs in a system of unequal competitors
+
+- A key insight to emerge from @Bever_1997 was that PSFs could promote coexistence of plant species when each plant species cultivated a soil community that had a greater negative impact on conspecifics than heterospecifics
+
+- Phenomenologically, this is analogous to the coexistence criteria that a pair of species can coexist when net intraspecific competition exceeds net interspecific competition in the system.
+
+- However, a great many of these experiments are conducted in highly controlled greenhouse settings, translating the outcomes from these experiments to the realized drivers of community assembly in the field remains a challenge [@Casper_2007; @van_der_Putten_2016; @Smith_Ramesh_2017]
+
+- Review of the many outcomes that have been documented from studies of "How do PSF strength relate to competition strength" and "How do PSFs predict species abundances"
+
+- Greater integration of PSFs into the burgeoning modern coexistence framework [@Chesson_2000] offers a promising way to organize the many ways in which PSFs may also influence the fitness differences to either promote coexistence and consider the joint effects of multiple drivers of community assembly: 
+
+    - At the local scale, PSFs may promote coexistence if performance of the competitive suprior is curbed due to a buildup of microbes that have a more negative effect on the superior than the inferior competitor.  
+    - PSFs may also promote exclusion at the local scale if the soil microbial community confers a fitness independent advantage to one of the species  
+    - In heterogeneous environments, variation in soil microbes may promote coexistence if that variation contributes to variation in species' site preference  
+    - On the other hand, soil microbes may hinder coexistence if they have greater negative effects on the competitive inferior plant species in its preferred environments than the negative effects on competitive superior in its preferred environments (i.e. soil microbial communities may reduce the strength of $covEC$)  
+    - @Lau_2012 showed that plants suffered less in drought conditions when the soil harbored a microbial community adapted to droughts- so, plant species growing in drier sites may suffer less in drought years. 
+    
+- While the theoretical framework of @Bever_1997 allows us to consider the role of microbes in driving stabilizing niche differences, it does not allow for microbes to drive equalizing differences between plant species. 
+
+
+- A promising route for integration is to model plant-microbe interactions under the apparent competition models of @Chesson_2008, which builds on the apparent competition framework of @Holt_1977
+
+
+
+### Summary of Chesson 2008
+
+$$\frac{1}{N_j}\frac{dN_j}{dT} = \sum_l c_{jl}v_lR_l - \sum_m a_{jm}P_m-\mu_j$$
+
+$$\frac{1}{R_l}\frac{dR_l}{dT} = r_l(1-\alpha_l R_l) - \sum_j N_jC_{jl}$$
+
+$$\frac{1}{P_m}\frac{dP_m}{dT} = r_m(1-\alpha_m P_m) + \sum_j Wa_{jm}P_m$$
+
+- The microbial community  cultivated  by each species can be modeled as a single "predator" species- an important implication is that this allows the predator to have species-specific impacts on the focal plant species. Cases in which a microbial community has a net positive fitness impact on a plant species can be modeled by setting $a_{jm}$ to a negative value. 
+
+- 
+ 
+
+### Methods
+
+### Preliminary results
+
+### What results might mean
+
+\clearpage
+
+## Timeline
+
+|**Academic Year**|  **Quarter** |  **Plan** |
+|:-----:|------|--------------------------------------------------------|
+| 2017-18 | Fall-Winter  |   |
+| 2017-18 | Spring-Summer|   |
+| 2018-19 | Fall-Winter  |   |
+| 2018-19 | Spring-Summer|   |
+| 2019-20 | Fall-Winter  |   |
+
+\clearpage
+
+## Supplement
+
+\footnotesize
+```{r table-species, echo = F}
+library(magrittr); library(knitr)
+species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
+             "Amsinckia menziesii", 
+             "Clarkia bottae","Clarkia purpurea", 
+             "Euphorbia peplus", 
+             "Medicago polymorpha", "Lotus wrangeliensis", 
+             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
+             "Salvia columbariae", 
+             "Plantago erecta")
+families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
+
+to_print <- cbind(Family = families, Species = species)
+
+knitr::kable(to_print, caption="Species list for functional resposne curve analyses", longtable = TRUE, booktabs = T)
+```
+\normalsize
+
+
+\clearpage
+
+## References
+
+
+
+

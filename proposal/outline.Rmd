@@ -15,13 +15,12 @@ output:
     toc: false
 fontfamily: mathpazo
 fontsize: 12pt
-header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow} \usepackage{graphicx,colortbl,xcolor}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
+header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow} \usepackage{graphicx,colortbl,xcolor,wrapfig}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
 csl: ecology.csl
 bibliography: bibliography.bib
 ---
 
 \clearpage
-\raggedright
 
 ## \textbf{Chapter 1: How do functional traits relate to species responses to variable environments?}
 
@@ -42,8 +41,8 @@ In the intro, write about microbial community as an envirnomental variable
 
 \begin{figure}[h]
   \includegraphics[width=\textwidth]{img/ch01-hypotheses.pdf}
-  \label{fig:ch1-hypotheses}
   \caption{Test}
+  \label{fig:ch1-hypotheses}
 \end{figure}
 
 ### Methods
@@ -56,21 +55,52 @@ $$\frac{N_{t+1,j,x}}{N_{t,j,x}} = (1-g_{j,x})*s_j +\frac{g_{j,x}*\lambda_{j,x}}{
 
 In this framework, environmental response can be parameterized in three ways: germination rate, the per-capita seed production in the absence of competitors, and a composite index that yields the expected population growth rate in the absence of competitors.   
 
+
+\begin{wraptable}{r}{8cm}
+\footnotesize
+```{r table-species, echo = F}
+library(magrittr); library(knitr)
+species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
+             "Amsinckia menziesii", 
+             "Clarkia bottae","Clarkia purpurea", 
+             "Euphorbia peplus", 
+             "Medicago polymorpha", "Lotus wrangeliensis", 
+             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
+             "Salvia columbariae", 
+             "Plantago erecta")
+families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
+
+to_print <- cbind(Family = families, Species = species)
+
+knitr::kable(to_print, caption="Species list for demography study", longtable = TRUE, booktabs = T)
+```
+\normalsize
+\end{wraptable}
+
 **Trait variation**: A suite of leaf, root, seed, and whole-plant functional traits (Table \ref{tab:ch1-traits}) were measured for twelve of the annual plant species in this experiment by @Kraft_2015. I will measure the same set of traits for the five remaining species according to the same protocols and will additionally measure leaf osmotic potential [@Bartlett_2012], stomatal index [@], and leaf vein density [@Sack_2013], all of which summarize components of leaf-level drought tolerance.   
+
 
 **Abiotic environmental variation**: We characterized various environmental variables at each of our experimental sites during the 2015-16 growing season. Soil physical and chemical properties were analysed by A&L Western Labs. Air temperature at each of the plots was measured with temperature data loggers (iButtons) that were placed inside PVC tubing to shield from solar radiation. The gravimetric water content was measured for each plot on 1 April 2016 (corresponding to the peak growing season for the majority of species that have an earlier phenology) and on 1 May 2016 (corresponding to peak growing season for a suite of later-phenology species).
 
-**Biotic environmental variation**: We characterized the variation in soil microbiota among our plots by using metagenomic sequencing to profile the diversity of bacteria, fungi, and small eukaryotes. Soil was sampled on 1 April 2016 and pooled from three equally spaced points within each experimental plot into a single sterlize 15 mL tube. Samples were stored at -80$^{\circ}$C until further processing. Total DNA was extracted using the MoBio Power Soil Extraction kit and PCRs were conducted using 16s rRNA primers for bacteria, fungal ITS primers, and 18s rRNA primers for small eukaryotes. Pooled samples were sequenced on the Illumina MiSeq platform at the UC-Berkeley sequencing facilities.   
+**Biotic environmental variation**: We characterized the variation in soil microbiota among our plots by using metagenomic sequencing to profile the diversity of bacteria, fungi, and small eukaryotes. Soil was sampled on 1 April 2016 and pooled from three equally spaced points within each experimental plot into a single sterlize 15 mL tube. Samples were stored at -80$^{\circ}$C until further processing. Total DNA was extracted using the MoBio Power Soil Extraction kit and PCRs were conducted using 16s rRNA primers for bacteria, fungal ITS primers, and 18s rRNA primers for small eukaryotes. Pooled samples were sequenced on the Illumina MiSeq platform at the UC-Berkeley sequencing facilities. Sequence data will be used to ordinate sites according to their soil microbial communities in multidimensional space.    
 
-\medskip 
+\bigskip 
 
-**Analyses**: stuff
+**Analyses**: I propose to assess the influence of functional traits on the demographic responses of species to environmental gradients with a generalized linear mixed modeling (GLMM) framework modified from [@Jamil_2012]. This framework, which was developed under the context of the fourth-corner problem [@Legendre_1997], models the likelihood of species presence across a landscape as a function of species traits, environmental properties, and crucially, an interaction term between the two: 
+\[  
+logit(p_{i,j}) = a_0+\underbrace{a_1z_j}_{trait\ effect}+\overbrace{b_0x_i}^{environment\ effect}+\underbrace{b_1z_jx_i}_{interaction}+\overbrace{\epsilon_{\alpha j} + \epsilon_{\beta i} + \gamma_i}^{error\ terms}
+\]
 
-### Preliminary results
+In this framework, the contribution of a trait to species' differences in the slope parameter $\beta_j$ can be quantified as a function of the variances $\hat\sigma_b$ between a model that includes a trait:environment term and one that lacks this interaction:
+
+$$C_\beta = 1-\frac{\hat\sigma^2_{\beta,\ no\ interaction\ term}}{\hat\sigma^2_{\beta,\ with\ interaction\ term}}$$
+
+@Jamil_2012 demonstrate that this framework can be extended to model abundance data, and I propose to modify it to model the experimentally estimated metrics of species performance. 
+
+
+### Preliminary results, implications, and further analyses
 A large proportion of the species pairs had uncoupled demographic responses- in other words, most species pairs did not respond in the same way to the multivariate changes in environment across sites (Figure \ref{fig-ch1-result1})
 
-
-### What results might mean
 
 -- Robin Snyder talk- propose to do a simulation of how strong we expect trait-demography relationship to be accounting for "luck" when we know true strength
 
@@ -172,25 +202,6 @@ $$\frac{1}{P_m}\frac{dP_m}{dT} = r_m(1-\alpha_m P_m) + \sum_j Wa_{jm}P_m$$
 \clearpage
 
 ## Supplement
-
-\footnotesize
-```{r table-species, echo = F}
-library(magrittr); library(knitr)
-species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
-             "Amsinckia menziesii", 
-             "Clarkia bottae","Clarkia purpurea", 
-             "Euphorbia peplus", 
-             "Medicago polymorpha", "Lotus wrangeliensis", 
-             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
-             "Salvia columbariae", 
-             "Plantago erecta")
-families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
-
-to_print <- cbind(Family = families, Species = species)
-
-knitr::kable(to_print, caption="Species list for functional resposne curve analyses", longtable = TRUE, booktabs = T)
-```
-\normalsize
 
 
 \clearpage

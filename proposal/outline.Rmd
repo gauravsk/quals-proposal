@@ -15,27 +15,26 @@ output:
     toc: false
 fontfamily: mathpazo
 fontsize: 12pt
-header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow} \usepackage{graphicx,colortbl,xcolor,wrapfig}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
+header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow,color} \usepackage{graphicx,colortbl,xcolor,wrapfig}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
 csl: ecology.csl
 bibliography: bibliography.bib
 ---
-
+\setlength{\parindent}{0cm}
 \clearpage
 
 ## \textbf{Chapter 1: How do functional traits relate to species responses to variable environments?}
 
 *Additional collaborators: Andy Kleinhesselink (UCLA); Jonathan Levine (ETH-Zurich); Emily Curd (UCLA/Cal eDNA)*
 
-In the intro, write about microbial community as an envirnomental variable
+. To address this concern, a number of studies have modeled the importance of trait differences in predicting species occurrence and abundance across landscapes (summarised in @Shipley_2016). However, an important limitation of these studies is that observed abundances are influenced not only by environmental variation but also by biotic variation between sites [@Adler_2013]. As a consequence, the most abundant species at a site need not have the traits that confer the highest fitness at that site [@Fox_2012]. Therefore, these studies measure links between functional traits and the joint responses of plants to abiotic and biotic variation despite only having predictions relating to the abiotic components. Experimentally isolating the impact of environment while keeping the competitive environment constant offers a way to build stronger links between functional trait differences and variation in species responses to variable environments. 
+
+In addition to the competitive neighborhood, the biotic interactions between plants and microbes may also turn over across space to influence plant performance. This turnover of soil microbes may have important effects on plant responses to abiotic environmental variation [@Keymer_2017]. For example, @Lau_2012 found that the fruit production of *Brassica rapa* was less impacted by a drought treatment when the plants were grown with a drought-adapted soil microbial community than when grown with a soil microbial community that had not been previously exposed to drought. Therefore, the soil microbial community may function as an additional environmental variable that to date has recevied relatively little attention from plant ecologists. 
 
 ### Chapter 1 hypotheses
 
-\textbf{H\textsubscript{0}}: Species may respond identically to environmental variation, irrespective of functional traits. We may expect this pattern if the environmental gradient spans a single stress gradient axis such that all species perform poorly at some sites and well at others (Figure \ref{fig:ch1-hypotheses}a). 
-
-\textbf{H\textsubscript{1}}: Species may have idiosyncratic responses to the environmental gradient, but the response may be unrelated to species functional traits. There may be potential for the storage effect to promote species coexistence, but the degree of stablization would be uncorrelated to species' functional similarity (Figure \ref{fig:ch1-hypotheses}a). 
-
-\textbf{H\textsubscript{2}}: The idiosyncratic responses of species to environmental gradients may be correlated with their functional traits. This pattern may arise if the functional traits are indicative of species' environmental preference along the gradient sampled (Figure \ref{fig:ch1-hypotheses}a). 
-
+\textbf{H\textsubscript{0}}: Species may respond identically to environmental variation, irrespective of functional traits. We may expect this pattern if the environmental gradient spans a single stress gradient axis such that all species perform poorly at some sites and well at others (Figure \ref{fig:ch1-hypotheses}a).  
+\textbf{H\textsubscript{1}}: Species may have idiosyncratic responses to the environmental gradient, but the response may be unrelated to species functional traits. There may be potential for the storage effect to promote species coexistence, but the degree of stablization would be uncorrelated to species' functional similarity (Figure \ref{fig:ch1-hypotheses}a).  
+\textbf{H\textsubscript{2}}: Variation in responses of species to environmental gradients may be explained by their functional traits. This pattern might arise if the functional traits are indicative of species' environmental preference along the gradient sampled (Figure \ref{fig:ch1-hypotheses}a).  
 \textbf{H\textsubscript{3}}: Species similarity in some traits may correlate with similarity in response to certain environmental variables. For example, species' simiarlity in drought tolerance may predict their response to an aridity gradient but not to a light gradient, and species similarity in seed size may predict their response to a soil texture gradient but not an aridity gradient (Figure \ref{fig:ch1-hypotheses}b). 
 
 
@@ -47,62 +46,35 @@ In the intro, write about microbial community as an envirnomental variable
 
 ### Methods
 
-**Demographic response**: In 2015-2016, I planted seeds of 17 annual plant species (Table \ref{tab:table-species}) in a setup that allowed me to parameterize a simplified annual plant popuation growth model. Specifically, the population growth rate of species $j$ at site $x$ is modeled as a function of the germination rate $g_{j,x}$, a global seed-bank survival rate for each species $s_j$, low-density seed production $\lambda_{j,x}$, species response to competitors $r_{j,x}$, and the competitive neighborhood $\eta_x$: 
+**Demographic response**: In 2015-2016, I planted seeds of 17 annual plant species (Table \ref{tab:table-species-ch1}) in a setup that allowed me to parameterize a simplified annual plant popuation growth model. Specifically, the population growth rate of species $j$ at site $x$ is modeled as a function of the germination rate $g_{j,x}$, a global seed-bank survival rate for each species $s_j$, low-density seed production $\lambda_{j,x}$, species response to competitors $r_{j,x}$, and the competitive neighborhood density $\eta_x$: 
 
 $$\frac{N_{t+1,j,x}}{N_{t,j,x}} = (1-g_{j,x})*s_j +\frac{g_{j,x}*\lambda_{j,x}}{1+r_{j,x}*\eta_x}$$
- 
- 
-
 In this framework, environmental response can be parameterized in three ways: germination rate, the per-capita seed production in the absence of competitors, and a composite index that yields the expected population growth rate in the absence of competitors.   
 
 
-\begin{wraptable}{r}{8cm}
-\footnotesize
-```{r table-species, echo = F}
-library(magrittr); library(knitr)
-species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
-             "Amsinckia menziesii", 
-             "Clarkia bottae","Clarkia purpurea", 
-             "Euphorbia peplus", 
-             "Medicago polymorpha", "Lotus wrangeliensis", 
-             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
-             "Salvia columbariae", 
-             "Plantago erecta")
-families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
-
-to_print <- cbind(Family = families, Species = species)
-
-knitr::kable(to_print, caption="Species list for demography study", longtable = TRUE, booktabs = T)
-```
-\normalsize
-\end{wraptable}
-
 **Trait variation**: A suite of leaf, root, seed, and whole-plant functional traits (Table \ref{tab:ch1-traits}) were measured for twelve of the annual plant species in this experiment by @Kraft_2015. I will measure the same set of traits for the five remaining species according to the same protocols and will additionally measure leaf osmotic potential [@Bartlett_2012], stomatal index [@], and leaf vein density [@Sack_2013], all of which summarize components of leaf-level drought tolerance.   
 
-
-**Abiotic environmental variation**: We characterized various environmental variables at each of our experimental sites during the 2015-16 growing season. Soil physical and chemical properties were analysed by A&L Western Labs. Air temperature at each of the plots was measured with temperature data loggers (iButtons) that were placed inside PVC tubing to shield from solar radiation. The gravimetric water content was measured for each plot on 1 April 2016 (corresponding to the peak growing season for the majority of species that have an earlier phenology) and on 1 May 2016 (corresponding to peak growing season for a suite of later-phenology species).
+**Abiotic environmental variation**: We characterized various environmental variables at each of our experimental sites during the 2015-16 growing season. Soil physical and chemical properties were analysed by A&L Western Labs. Air temperature at each of the plots was measured with temperature data loggers (iButtons) that were placed inside PVC tubing to shield from solar radiation. The gravimetric water content was measured for twice for each plot - once each in the peak growing season for the early and later phenology species.  
 
 **Biotic environmental variation**: We characterized the variation in soil microbiota among our plots by using metagenomic sequencing to profile the diversity of bacteria, fungi, and small eukaryotes. Soil was sampled on 1 April 2016 and pooled from three equally spaced points within each experimental plot into a single sterlize 15 mL tube. Samples were stored at -80$^{\circ}$C until further processing. Total DNA was extracted using the MoBio Power Soil Extraction kit and PCRs were conducted using 16s rRNA primers for bacteria, fungal ITS primers, and 18s rRNA primers for small eukaryotes. Pooled samples were sequenced on the Illumina MiSeq platform at the UC-Berkeley sequencing facilities. Sequence data will be used to ordinate sites according to their soil microbial communities in multidimensional space.    
 
 \bigskip 
 
-**Analyses**: I propose to assess the influence of functional traits on the demographic responses of species to environmental gradients with a generalized linear mixed modeling (GLMM) framework modified from [@Jamil_2012]. This framework, which was developed under the context of the fourth-corner problem [@Legendre_1997], models the likelihood of species presence across a landscape as a function of species traits, environmental properties, and crucially, an interaction term between the two: 
+\textbf{Analyses}: I propose to assess the influence of functional traits on the demographic responses of species to environmental gradients with a generalized linear mixed modeling (GLMM) framework modified from [@Jamil_2012]. This framework, which was developed under the context of the fourth-corner problem [@Legendre_1997], models species performance across a landscape ($p_{i,j}$) as a function of species traits $z$, environmental properties $x$, and crucially, an interaction term between the two: 
 \[  
-logit(p_{i,j}) = a_0+\underbrace{a_1z_j}_{trait\ effect}+\overbrace{b_0x_i}^{environment\ effect}+\underbrace{b_1z_jx_i}_{interaction}+\overbrace{\epsilon_{\alpha j} + \epsilon_{\beta i} + \gamma_i}^{error\ terms}
+p_{i,j} \sim \overbrace{a_0}^{species\ effect}+\underbrace{a_1z_j}_{trait\ effect}+\overbrace{b_0x_i}^{environment\ effect}+\underbrace{b_1z_jx_i}_{interaction}+\overbrace{\epsilon_{\alpha j} + \epsilon_{\beta i} + \gamma_i}^{error\ terms}
 \]
 
-In this framework, the contribution of a trait to species' differences in the slope parameter $\beta_j$ can be quantified as a function of the variances $\hat\sigma_b$ between a model that includes a trait:environment term and one that lacks this interaction:
+The species and site effect terms can be thought of as unmeasured species traits and environmental variables, respectively. The contribution of trait differences to interspecific variation in environmental response (i.e. the slope parameter $\beta_1$) can be quantified as a function of the variance $\hat\sigma_b$ between a model that includes a trait:environment term and one that lacks this interaction:
 
 $$C_\beta = 1-\frac{\hat\sigma^2_{\beta,\ no\ interaction\ term}}{\hat\sigma^2_{\beta,\ with\ interaction\ term}}$$
 
-@Jamil_2012 demonstrate that this framework can be extended to model abundance data, and I propose to modify it to model the experimentally estimated metrics of species performance. 
-
 
 ### Preliminary results, implications, and further analyses
-A large proportion of the species pairs had uncoupled demographic responses- in other words, most species pairs did not respond in the same way to the multivariate changes in environment across sites (Figure \ref{fig-ch1-result1})
+A large proportion of the species pairs had uncoupled demographic responses- in other words, most species pairs did not respond in the same way to the multivariate changes in environment across sites (Figure \ref{fig-ch1-results}a), suggests against **H_\textsubscript{0}**. Thus, variable responses of species to environmental heterogeneity may contribute to their coexistence in this landscape. The environmental variation stems primarily from differences in soil [Ca\textsuperscript{2+}]:[Mg\textsuperscript{2+}] ratio and in soil texture and depth  (Figure \ref{fig-ch1-results}b). \colorbox{BurntOrange}{The soil microbial community also varied across our landscape (currently running scripts to get an NMDS plot from this as a first step)}. The species in this experiment span a wide range of functional diversity, with leaf size ranging from XXX to XXX and SLA ranging from XXX to XXX (Figure \ref{fig-ch1-results}c). Priliminary analyses conducted with simple linear regressions (not in the GLMM framework above) suggest that some trait differences may explain variation in species responses to environment. For example, four out of the five smallest-seeded species in this experiment responded positively to shallower and sandier soils, whereas all other species prefer deeper soils with higher clay content (Figure \ref{fig-ch1-results}d). 
 
 
--- Robin Snyder talk- propose to do a simulation of how strong we expect trait-demography relationship to be accounting for "luck" when we know true strength
+Modeling variation in plant response to environment according to the GLMM framework above will address a fundamental gap of trait-based plant ecology: the assumption functional traits have direct and predictive relationships with measurable environmental gradients [@Adler_2013;@Shipley_2016]. Due to strong separation of sites along axes of soil chesmitry and physical structure, root and seed traits that directly link to species' belowground ecological strategies may be more relevant to explaining variation in species response in our system than traits that primarily inform aboveground strategies. Alternatively, traits that have direct links to plant physiology that clearly link to an environmental axis (e.g. osmotic potential to water availablility) may show stronger links to plant performance than integrative traits like SLA that are related to various environmental axes. An important step will be to conduct a power analysis to assess the extent to which the potentially weak but important influences of individual traits (as might be expected for some of the integrative functional traits measured for this study) can be recovered given the probabalistic nature of the models (Snyder & Ellner, *in prep*). A number of studies have also documented phylogenetic structure in plant communities; therefore, incorporating evolutionary non-independence of our samples by using phylogenetically informed GLMMs [@Ives_2011]  is another promising next step. Armed with a more robust understanding of the link function between traits and fitness, trait-based plant ecology can move towards its potential to be a predictive science in a rapidly changing world [@McGill_2006]
 
 ## Chapter 2: How might trait plasticity in reponse to abiotic environment and competitors shape species' demographic responses to environment?
 
@@ -211,3 +183,23 @@ $$\frac{1}{P_m}\frac{dP_m}{dT} = r_m(1-\alpha_m P_m) + \sum_j Wa_{jm}P_m$$
 
 
 
+\begin{wraptable}{r}{8cm}
+\footnotesize
+```{r table-species-ch1, echo = F}
+library(magrittr); library(knitr)
+species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
+             "Amsinckia menziesii", 
+             "Clarkia bottae","Clarkia purpurea", 
+             "Euphorbia peplus", 
+             "Medicago polymorpha", "Lotus wrangeliensis", 
+             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
+             "Salvia columbariae", 
+             "Plantago erecta")
+families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
+
+to_print <- cbind(Family = families, Species = species)
+
+knitr::kable(to_print, caption="Species list for demography study", longtable = TRUE, booktabs = T)
+```
+\normalsize
+\end{wraptable}

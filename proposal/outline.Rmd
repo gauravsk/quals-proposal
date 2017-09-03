@@ -7,15 +7,24 @@ author:
   affiliation: \hspace{11mm}\textbf{Dr. Nathan Kraft} (Chair), Dr. Jennifer Martiny, Dr. Lawren Sack, Dr. Felipe Zapata
 abstract: "\\textbf{Abstract:}  
 \\newline
-How do interactions between organisms and their environment influence the dynamics of ecological communities? Ecologists have long understood that species performance can be impacted by both their response to the abiotic variation and by their interactions with other organisms. In my dissertation I aim to experimentally investigate how species coexistence is impacted by plant resource use strategies (as summarized by functional traits) and species-specific interactions with soil microorganisms in an annual plant community in coastal California. A longstanding assumption has been that the coexistence of species with dissimilar functional traits is stabilized due to their distinct responses to environmental heterogeneity [@Adler_2013]. For Chapter 1 I plan to test this assumption using recent advances in coexistence theory that decompose the outcome of species interactions in patchy landscapes into coexistence-promoting stabilizing niche differences and fitness differences that drive competitive exclusion [@Chesson_2000]. Specifically, I propose to test whether functional trait differences are predictive of the similarity in the functional responses of species to environmental gradients. Another striking observation from nature is that individuals within a species can have vastly different phenotypes. Despite considerable interest, the consequences of this variation on species coexistence remain largely unclear [@Violle_2012; @Turcotte_2016]. For Chapter 2, I aim to investigate how intra-specific variation in functional traits might influence community dynamics beginning from understanding of how trait differences influence species coexistence generally. Over the past two decades, a great deal of research has also highlighted the role of soil microorganisms in shaping terrestrial plant communities [@Bever_2015]. A key insight to emerge from this line of inquiry is that plant species coexistence can be promoted when plants cultivate a soil microbial community that has more negative impacts on plants of the same species than on plants of other species, which is in agreement with traditional coexistence theory [@Chesson_2000; @Bever_2003]. Although these biotic interactions influence plant community dynamcics in nature in conjunction with abiotic factors, their effects are generally considered independently of one another [@van_der_Putten_2016]. For Chapter 3, I aim to demonstrate how the relative contributions of plant-plant competition and plant-microbe interactions can be jointly considered under the established coexistence framework of @Chesson_2008 via a critical review of existing plant-soil feedback literature. This thesis will involve novel applications of recent advances in theoretical ecology to plant community and itegrate the historically disjunct fields of plant competition and plant-microbe interactions."
-date: "Draft- 30 August 2017"
+How do interactions between organisms and their environment influence the dynamics of ecological communities? Ecologists have long understood that species performance can be impacted by both their response to the abiotic variation and by their interactions with other organisms. In my dissertation I aim to experimentally investigate how species coexistence is impacted by plant resource use strategies (as summarized by functional traits) and species-specific interactions with soil microorganisms in an annual plant community in coastal California. This thesis will involve novel applications of recent advances in theoretical ecology to plant community and itegrate the historically disjunct fields of plant competition and plant-microbe interactions. 
+\\newline
+\\newline
+A longstanding assumption has been that the coexistence of species with dissimilar functional traits is stabilized due to their distinct responses to environmental heterogeneity [@Adler_2013]. For Chapter 1 I plan to test this assumption using recent advances in coexistence theory that decompose the outcome of species interactions in patchy landscapes into coexistence-promoting stabilizing niche differences and fitness differences that drive competitive exclusion [@Chesson_2000]. Specifically, I propose to test whether functional trait differences are predictive of the similarity in the functional responses of species to environmental gradients. 
+\\newline
+\\newline
+Another striking observation from nature is that individuals within a species can have vastly different phenotypes. Despite considerable interest, the drivers of this variation and its influence on species coexistence and community dynamics remain largely unclear [@Violle_2012; @Turcotte_2016]. For Chapter 2, I aim to investigate some of the biotic and abiotic drivers of ITV how intra-specific trait variation and ask how it might influence community dynamics beginning from understanding of how trait differences influence species coexistence generally. 
+\\newline
+\\newline
+Over the past two decades, a great deal of research has also highlighted the role of soil microorganisms in shaping terrestrial plant communities [@Bever_2015]. Microbes have been shown to be critical to the survival and growth of plants in some conditions, and have wreaked lasting ecological damage in other plant communities. In nature, these biotic interactions influence plant community dynamcics in conjunction with abiotic factor; however in the literature, their effects are generally considered independently of one another [@van_der_Putten_2016]. For Chapter 3, I aim to demonstrate how the relative contributions of plant-plant competition and plant-microbe interactions can be jointly considered under the established coexistence framework of @Chesson_2008 via a critical review of existing plant-soil feedback literature."
+date: "Draft- 3 September 2017"
 output:
   bookdown::pdf_document2:
     template: ~/grtools/svm-latex-ms.tex
     toc: false
 fontfamily: mathpazo
 fontsize: 12pt
-header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow,color} \usepackage{graphicx,colortbl,xcolor,wrapfig}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
+header-includes: \usepackage{tabularx} \usepackage{float,booktabs,longtable,multirow,color,mathtools} \usepackage{graphicx,colortbl,xcolor,wrapfig}\usepackage{mathptmx,fixltx2e} \usepackage[font=small,skip=0pt]{caption}
 csl: ecology.csl
 bibliography: bibliography.bib
 ---
@@ -23,7 +32,6 @@ bibliography: bibliography.bib
 \setlength{\parindent}{0em}
 \setlength{\parskip}{.5em}
 
-\clearpage
 
 ## Background
 
@@ -46,9 +54,9 @@ In addition to the competitive neighborhood, the biotic interactions between pla
 
 To address these gaps, I propose to use experimental data to estimate the contribution of trait differences to species-specific demographic responses to environmental variation, including turnover in soil microbial communities, for the first chapter of my dissertation. 
 
-### Chapter 1 hypotheses
+### Hypotheses
 
-\textbf{H\textsubscript{0}}: Species may respond identically to environmental variation, irrespective of functional traits. We may expect this pattern if the environmental gradient spans a single stress gradient axis such that all species perform poorly at some sites and well at others (Figure \ref{fig:ch1-hypotheses}a).  
+\textbf{H\textsubscript{0}}: Species may respond identically to environmental variation, irrespective of functional traits. We may expect this pattern if the environmental gradient spans a single stress gradient axis such that all species perform poorly at some sites and well at others (Figure \ref{fig:ch1-hypotheses}a). In this case, observed patterns of species turnover across the landscape at Sedgwick may be driven by poor dispersal.   
 \textbf{H\textsubscript{1}}: Species may have idiosyncratic responses to the environmental gradient, but the response may be unrelated to species functional traits. There may be potential for the storage effect to promote species coexistence, but the degree of stabilization would be uncorrelated to species' functional similarity (Figure \ref{fig:ch1-hypotheses}a).  
 \textbf{H\textsubscript{2}}: Variation in responses of species to environmental gradients may be explained by their functional traits. This pattern might arise if the functional traits are indicative of species' environmental preference along the gradient sampled (Figure \ref{fig:ch1-hypotheses}a).  
 \textbf{H\textsubscript{3}}: Species similarity in some traits may correlate with similarity in response to certain environmental variables. For example, species' similarity in drought tolerance may predict their response to an aridity gradient but not to a light gradient, and species similarity in seed size may predict their response to a soil texture gradient but not an aridity gradient (Figure \ref{fig:ch1-hypotheses}b). 
@@ -63,7 +71,7 @@ To address these gaps, I propose to use experimental data to estimate the contri
 
 ### Methods
 
-**Demographic variation**: In 2015-2016, we planted seeds of 17 annual plant species (Table \ref{tab:table-species-ch1}) in a setup that allowed me to parameterize a simplified annual plant population growth model. Specifically, the population growth rate of species $j$ at site $x$ is modeled as a function of the germination rate $g_{j,x}$, a global seed-bank survival rate for each species $s_j$, low-density seed production $\lambda_{j,x}$, species response to competitors $r_{j,x}$, and the competitive neighborhood density $\eta_x$: 
+**Demographic variation**: In 2015-2016, we planted seeds of 17 annual plant species (Table \ref{tab:table-species-ch1}) at 24 plots in a setup that allowed me to parameterize a simplified annual plant population growth model. Specifically, the population growth rate of species $j$ at site $x$ is modeled as a function of the germination rate $g_{j,x}$, a global seed-bank survival rate for each species $s_j$, low-density seed production $\lambda_{j,x}$, species response to competitors $r_{j,x}$, and the competitive neighborhood density $\eta_x$: 
 
 $$\frac{N_{t+1,j,x}}{N_{t,j,x}} = (1-g_{j,x})*s_j +\frac{g_{j,x}*\lambda_{j,x}}{1+r_{j,x}*\eta_x}$$
 In this framework, environmental response can be parameterized in three ways: germination rate, the per-capita seed production in the absence of competitors, and a composite index that yields the expected population growth rate in the absence of competitors.   
@@ -120,22 +128,47 @@ Modeling variation in demographic response to environment in this framework abov
   \label{fig-ch1-results}
 \end{figure}
 
-\clearpage
-
-## Timeline
-
-|**Year**|  **Season** |  **Plan** |
-|:-----:|------|--------------------------------------------------------|
-| 2017 | Fall-Winter  | Finalize data collection and Analysis for Chapter 1; Literature reviews for Chapter 3   |
-| 2018 | Spring-Summer| Analysis and writeup for Chapter 1; Additional data collection for Chapter 2; Literature reviews & modeling for Chapter 3|
-| 2018 | Fall-Winter  | Submission for Chapter 1, Analysis for Chapter 2, Modeling & analysis for Chapter 3 |
-| 2019 | Spring-Summer| Writeup and Analysis for Chapter 2, Writeup for Chapter 3|
-| 2019 | Fall-Winter  | Writeup for Chapter 2; Submission for Chapter 3|
-| 2020 | Spring| Submission for Chapter 2|
 
 
 \clearpage
+## Chapter 2: How does intra-specific variation in functional traits influence species coexistence? 
 
+Individuals within a species can have vastly different phenotypes- indeed, genetic variation within populations is the fundamental basis for natural selection. Intra-specific variation (ITV) in plant functional traits can be quite high: a recent meta-analysis [@Sierfert_2015] showed that 25% of functional trait variation within communities is driven by ITV. Traits may vary within species for various reasons. Within an individual, there can be ontogenetic shifts in functional traits [@Spasojevic_2014]. The local environment is also known to affect functional traits- for example, sun-exposed leaves of an individual tend to be larger and have lower specific leaf area (SLA) than shaded leaves. Finally, functional traits may be influenced by their local competitive neighborhood [@Turcotte_2016]. 
+
+
+As ecologists continue to test how species trait values influence competitive interactions and other community dynamics, the question of how such intra-specific differences in  traits affect these dynamics remains largely unanswered [@Turcotte_2016; @Hart_2016; @Violle_2012]. 
+
+
+### Hypotheses  
+
+\textbf{Q1: What are the patterns of ITV in response to a strict environmental gradient (i.e. one across which competitive neighborhoods are not changing)?}    
+\textbf{H\textsubscript{0}}: Species functional traits may not change across environmental gradients. In this case, observed patterns of community-wide trait turnover across gradients may be driven by species turnover or due to trait responses to competitive neighborhoods.    
+\textbf{H\textsubscript{1}}: Functional traits may shift in the same way across species in response to environmental gradients (e.g. trait values may increase across the gradient for all species).    
+\textbf{H\textsubscript{2}}: Species may show idiosyncratic shifts in functional traits across environmental gradients.    
+\textbf{H\textsubscript{2a}}: Species that are less demographically sensitive to the environmental variation (i.e. species with high population growth rates at all sites) may show higher ITV than species that are more sensitive to the environment.   
+
+\textbf{Q2: How might trait shifts in response to competitors affect the outcome of competition?}     
+\textbf{H\textsubscript{0}}: Species functional traits may not shift in response to competitive backgrounds.    
+\textbf{H\textsubscript{1}}: Functional traits may shift in the same way across species in response to competitive bacgrounds (e.g. trait values may be higher in competition than when grown alone, irrespective of species).    
+\textbf{H\textsubscript{2}}: Species may show idiosyncratic shifts in functional traits across environmental gradients. In this case, ITV might have the potential to shift the outcome of competition by influencing the magnitude of niche and fitness differences between species.    
+\textbf{H\textsubscript{2A}}: Traits of competitive inferiors may respond more strongly than those of competitive superiors in a way that decreases fitness differences or increases niche differences [@Kraft_2015]; alternatively, trait changes may shift in ways that reinforce the dominance of the competitive superior. 
+
+
+### Methods  
+
+**Trait sampling**: In 2016-2017 we planted seeds of 20 species in the same locations we had used for our demography experiment in Q1. Seeds were planted 15 cm away from one another to ensure that plants were growing with a very low density of competition so that we could estimate the impact of environment alone on traits for **Q1**. Additionally, at one site, we planted all species in a high competitive density to estimate the effects of competitive neighborhoods on traits for **Q2**. We measured leaf area, specific leaf area (SLA), leaf dry matter content (LDMC) on three leaves from each individual. We additionally measured plant height and canopy shape index on the same individualsa and stored root tissues in ethanol to measure specific root length (SRL).  
+
+**Analysis**: . To test whether functional traits change with competitive background and whether such a change is species-specific, we performed a two-factor ANOVA testing for the influence of species identity, competition background, and their interaction on the three leaf traits (leaf area, SLA, LDMC). If species have idiosyncratic responses to competition, then trait shifts in response to competition might have potential to change competitive outcomes. I will use the trait-based models of fitness and niche differences from @Kraft_2015 to test whether accounting for variation in functional traits changes predictions of coexistence.  
+
+### Preliminary results, future analyses, and implications
+
+h
+
+In total, we measured traits on >800 individuals for this study, with an average of 40 individuals per species. A two-factor ANOVA revealed species- and trait-specific consequences of competitor density on traits (Figure \ref{ch2-results}). We found that plants growing in dense competition tended to have higher SLA and larger leaves than those of the same species grown at low-density (p < .0001). Competitive density had no clear effect on LDMC. There was a significant interaction between species and competitive background for all three traits, indicating species-specific responses to competition. 
+
+
+
+\clearpage
 
 ## Chapter 3: Considering the consequences of soil microbial communities on plant species dynamics under the modern coexistence framework
 
@@ -145,28 +178,40 @@ But how important are these effects in comparison to the competitive effects tha
 
 **State of plant-soil feedback literature**: Plants can alter both biotic and abiotic characteristics of the soil. Plants that later grow in those soils will be responding to the changes- this cyclical relationship is the basis of plant-soil feedbacks (PSFs). @Bever_1997 showed that if the effects of the soil community cultivated by a plant species $A$ are more negative to the population growth rate of species $A$ than the growth rate of plant species $B$, and vice-versa (i.e. more negative intra-specific effects than inter-specific effects), then PSFs can promote species coexistence. Alternatively, positive PSFs can drive competitive exclusion by preferrentially promoting the performance of the abundant species. This framework has inspired many studies (a Web of Science search for titles containing "plant-soil feedback*" yielded 171 results overall and 73 in 2015-2017 alone) which have documented a diversity of positive, negative, and neutral effects of PSFs. 
 
-Despite such extensive experimentation, it remains difficult to predict the importance of PSFs: their impacts seem to be highly species- and environment-specific [@van_der_Putten_2016]. For example, @Smith_Ramesh_2017 predict that PSFs are less important for coexistence in higher nutrient sites where plants can have high immunity and produce more defence compounds, whereas @van_der_Putten_2016 predict that the higher performance of pathogens in higher nutrient sites will increase the importance of negative PSFs. Additionally, most experimental work is conducted under highly controlled greenhouse settings, and it is difficult to translate these results into the importance of PSFs in nature [@van_der_Putten_2016]. Finally, an important limitation of these studies is that it ignores the potential for plants to respond to site-driven differences in soil microbes. Reframing the theoretical context of this work may highlight heretofore overlooked parameters and suggest avenues of research to start building generalities. 
+Despite such extensive experimentation, it remains difficult to predict the importance of PSFs: their impacts seem to be highly species- and environment-specific [@van_der_Putten_2016]. For example, @Smith_Ramesh_2017 predict that PSFs are less important for coexistence in higher nutrient sites where plants can have high immunity and produce more defence compounds, whereas @van_der_Putten_2016 predict that the higher performance of pathogens in higher nutrient sites will increase the importance of negative PSFs. Additionally, most experimental work is conducted under highly controlled greenhouse settings, and it is difficult to translate these results into the importance of PSFs in nature [@van_der_Putten_2016]. Finally, an important limitation of this framework from the perspective of coexistence theory is that it focuses solely on one set of processes that might promote coexistence (namely, stabilizing niche differences) but fails to incorporate potential effects of microbes on fitness differences. Reframing plant-soil interactions in modern coexistence theory may highlight heretofore overlooked parameters and suggest avenues of research to start building generalities. 
 
-**Overview of competition/predation framework**: That shared natural enemies can change the outcome of strict resource competition has been long understood in ecology [@Holt_1977].  h
+**Overview of competition/predation framework**: That shared natural enemies can change the outcome of strict resource competition has been long understood in ecology as "apparent competition" [@Holt_1977]. @Chesson_2008 integrated apparent competition into modern coexistence theory to show how natural enemies can affect coexistence in much the same way as resource competition. If natural enemies are specialists, then intra-specific feedback loops are stronger than inter-specific feedback loops and coexistence is promoted via lower niche overlap. On the other hand, physiological tradeoffs between natural enemy defense and rates of reproduction can promote coexistence via equalizing fitness differences [@Chesson_2012]. @Chesson_2008 derived equations to quantify niche overlap ($\rho$) and fitness ($\kappa_j$) as a joint function of resource competition and natural enemies (Table \ref{tab:chesson08-params}): 
 
-Many of these gaps can be addressed by reconsidering plant-microbe interactions in light of the comptition-predation framework of @Chesson_2008. Soil microbes can be thought of as any other predator that decreases the population growth rate of the prey (here, the focal plants). Plant-microbe interactions with net positive feedbacks can be modeled by setting the effect of the predator on the prey to be positive. 
-
-### Summary of Chesson 2008
-
-$$\frac{1}{N_j}\frac{dN_j}{dT} = \sum_l c_{jl}v_lR_l - \sum_m a_{jm}P_m-\mu_j$$
-
-$$\frac{1}{R_l}\frac{dR_l}{dT} = r_l(1-\alpha_l R_l) - \sum_j N_jC_{jl}$$
-
-$$\frac{1}{P_m}\frac{dP_m}{dT} = r_m(1-\alpha_m P_m) + \sum_j Wa_{jm}P_m$$ 
-
-$$\rho = \frac{ \sum_{l} \frac{C_{jl}V_{l}C_{kl}}{r_l^R\alpha_I^R} + \sum_{m} \frac{a_{jm}wa_{km}}{r_m^P\alpha_m^P}}{\sqrt{\left( \sum_l\frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} +  \sum_l\frac{a_{jm}^2w}{r_m^P\alpha_m^P}\right)\left( \sum_l\frac{c_{kl}^2v_l}{r_l^R\alpha_l^R} +  \sum_l\frac{a_{km}^2w}{r_m^P\alpha_m^P}\right )}}$$    
+$$\rho = \frac{ \sum_{l} \frac{c_{jl}V_{l}c_{kl}}{r_l^R\alpha_I^R} + \boxed{\sum_{m} \frac{a_{jm}wa_{km}}{r_m^P\alpha_m^P}}}{\sqrt{\left( \sum_l\frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} +  \boxed{\sum_l\frac{a_{jm}^2w}{r_m^P\alpha_m^P}}\right)\left( \sum_l\frac{c_{kl}^2v_l}{r_l^R\alpha_l^R} +  \boxed{\sum_l\frac{a_{km}^2w}{r_m^P\alpha_m^P}}\right)}}$$
 
 
-$$\kappa_j = \frac{\sum_l \frac{C_{jl}v_l}{\alpha_l^R}-\sum_m\frac{a_{jm}}{\alpha_m^P} - \mu_j}{\sqrt{\left(\sum_l \frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} + \sum_m \frac{a_{jm}^2w}{r_m^P\alpha_m^P} \right)}}$$
+$$\kappa_j = \frac{\sum_l \frac{c_{jl}v_l}{\alpha_l^R}-\boxed{\sum_m\frac{a_{jm}}{\alpha_m^P}} - \mu_j}{\sqrt{\left(\sum_l \frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} + \boxed{\sum_m \frac{a_{jm}^2w}{r_m^P\alpha_m^P}} \right)}}$$
 
-## Preliminary results, further analyses, and implications 
+All boxed terms indicate the effects of natural enemies, whereas all unboxed terms indicate the effects of resource competition (save $\mu_j$, which represents maintenance costs of species $j$).
 
-Analysis of @Chesson_2008's model shows that the net impacts of plant-mirobe feedbacks can be influenced by several parameters. For instance, the importance of PSFs to plant coexistence is not only a function of the relative impacts of the microbes on the two focal species, but also a function of the degree to which microbial populations are sustained by other species in the community. Specifically, the importance of PSFs is strongest when the microbes interact only weakly with species outside of the focal group (Table \ref{tab-ch3-table}). Another key insight to emerge from this framework is that all else being equal, the relative importance of PSFs is higher in more fertile sites (those with higher resource replacement rates $r^R$, Table \ref{tab-ch3-table}). This insight is in direct contradiction with the recent prediction of @Smith_Ramesh_2017, who suggest that PSFs should be less relevant in more fertile sites but fail to consider the relative importance of PSFs and resource competition. 
+### Preliminary results, further analyses, and implications 
+
+I have implemented the model demographic model from @Chesson_2008 as an `R` webapp (https://github.com/gauravsk/chesson-2008-exploration). Analysis of @Chesson_2008's model shows that the net impacts of plant-mirobe feedbacks can be influenced by several parameters. For instance, the importance of PSFs to plant coexistence is not only a function of the relative impacts of the microbes on the two focal species, but also a function of the degree to which microbial populations are sustained by other species in the community. Specifically, the importance of PSFs is strongest when the microbes interact only weakly with species outside of the focal group (Table \ref{tab-ch3-table}). Another key insight to emerge from this framework is that all else being equal, the relative importance of PSFs is higher in more fertile sites (those with higher resource replacement rates $r^R$, Table \ref{tab-ch3-table}). This insight is in direct contradiction with the recent prediction of @Smith_Ramesh_2017, who suggest that PSFs should be less relevant in more fertile sites but fail to consider the **relative importance** of PSFs and resource competition. 
+
+I plan to continue exploring the behaviour of this model and find generalities to help interpret the many contradictory ideas regarding PSFs and their role in shaping plant communities. I also propose to conduct a thorough review of the literature since @Bever_1997 and interpret the results in light of the joint competition-natural enemies model. This review will highlight areas that have received little attention but are important to understanding the role of PSFs in nature. Finally, I will propose future experimental work that rigorously tests the role of PSFs relative to that of resource competition in natural systems. Reframing PSFs under the modern coexistence framework will help the field meet its new frontier of understanding the relative importance of PSFs in nature and understanding their heterogenity across landscapes.
+
+
+\clearpage
+
+
+
+## Timeline
+
+|**Year**|  **Season** |  **Plan** |
+|:-----:|------|--------------------------------------------------------|
+| 2017 | Fall-Winter  | Analysis and writeup for Chapter 1; Literature reviews for Chapter 3   |
+| 2018 | Spring-Summer| Writeup and submission for Chapter 1; Additional data collection for Chapter 2; Literature reviews & modeling for Chapter 3|
+| 2018 | Fall-Winter  | Analysis for Chapter 2, Modeling & analysis for Chapter 3 |
+| 2019 | Spring-Summer| Writeup and Analysis for Chapter 2, Writeup for Chapter 3|
+| 2019 | Fall-Winter  | Writeup for Chapter 2; Submission for Chapter 3|
+| 2020 | Spring| Submission for Chapter 2|
+
+\clearpage
 
 
 ## References

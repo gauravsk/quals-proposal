@@ -145,7 +145,7 @@ kable(to_print, format = "latex" , longtable = TRUE, caption = "List of function
 p_{i,j} \sim \overbrace{a_0}^{\substack{species\\ effect}}+\underbrace{a_1z_j}_{\substack{trait\\ effect}}+\overbrace{b_0x_i}^{\substack{environment\\ effect}}+\underbrace{b_1z_jx_i}_{interaction}+\overbrace{\epsilon_{\alpha j} + \epsilon_{\beta i} + \gamma_i}^{error\ terms}
 \]
 
-The species effect term $a_0$ is a fixed effect that can be thought of as capturing unmeasured species traits, and the random effect term $\gamma_i$ represents unmeasured environmental variation. The contribution of trait differences to interspecific variation in environmental response (i.e. the slope parameter $\beta_1$) can be quantified as a function of the variance explained $\hat\sigma_b$ by a model that includes a trait:environment interactiom term and one that lacks it:
+The species effect term $a_0$ is a fixed effect that can be thought of as capturing unmeasured species traits, and the random effect term $\gamma_i$ represents unmeasured environmental variation. The contribution of trait differences to interspecific variation in environmental response (i.e. the slope parameter $\beta_1$) can be quantified as a function of the variance explained ($\hat\sigma_b$) by a model that includes a trait:environment interactiom term and one that lacks it:
 
 $$C_\beta = 1-\frac{\hat\sigma^2_{\beta,\ no\ interaction\ term}}{\hat\sigma^2_{\beta,\ with\ interaction\ term}}$$
 

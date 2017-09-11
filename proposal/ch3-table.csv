@@ -1,0 +1,6 @@
+$a_jm$,$a_jn$,$a_km$,$a_kn$,$r_l$,$r_g$,$r_m$,$r_n$,total niche overlap,niche overlap due to comp,niche overlap due to enemies,fitness ratio,coexist?
+0.001,0.001,0.001,0.001,2,2,0.1,0.1,1,1,1,1,no
+,,,,,,,,,,,,
+\textbf{0.015},0.001,0.001,\textbf{0.015},2,2,0.1,0.1,0.9536,1,0.1327,1,yes
+0.015,0.001,0.001,0.015,\textbf{0.4},\textbf{0.4},0.1,0.1,0.9906,1,0.1327,1,yes- but lot less stable
+0.015,0.001,0.001,0.015,2,2,\textbf{1},\textbf{1},0.995,1,0.1327,1,yes- but lot less stable

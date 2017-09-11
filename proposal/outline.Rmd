@@ -19,7 +19,8 @@ Another striking observation from nature is that individuals within a species ca
 Over the past two decades, a great deal of research has also highlighted the role of soil microorganisms in shaping terrestrial plant communities [@Bever_2015]. Microbes have been shown to promote plant performance in stressful conditions and have wreaked lasting ecological damage in other communities. In nature, such biotic interactions unfold concurrently with resource competition between plants; however in the literature, their effects are generally considered independently of one another [@van_der_Putten_2016]. For Chapter 3, I aim to demonstrate how the effects of resource competition and plant-microbe interactions can be jointly considered under the established coexistence framework of @Chesson_2008 via a critical review of existing plant-soil feedback literature."
 date: "Draft- 6 September 2017"
 output:
-  bookdown::word_document2:
+  bookdown::pdf_document2:
+    template: ~/grtools/svm-latex-ms.tex 
     toc: false
 fontfamily: mathpazo
 fontsize: 11pt

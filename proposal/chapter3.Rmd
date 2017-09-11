@@ -1,0 +1,54 @@
+
+\begin{wraptable}{r}{5cm}
+\footnotesize
+```{r table-species-ch1, echo = F}
+library(magrittr); library(knitr)
+species <- c("Agoseris heterophylla","Centaurea melitensis" ,"Chaenactis glabriuscula","Hemizonia congesta" ,"Lasthenia californica", "Micropus californicus", 
+             "Amsinckia menziesii", 
+             "Clarkia bottae","Clarkia purpurea", 
+             "Euphorbia peplus", 
+             "Medicago polymorpha", "Lotus wrangeliensis", 
+             "Bromus madritensis","Hordeum murinum", "Vulpia microstachys", 
+             "Salvia columbariae", 
+             "Plantago erecta")
+families <- c(rep("Asteraceae", 6), "Boraginaceae",rep("Onagraceae", 2), "Euphorbiaceae", rep("Fabaceae",2), rep("Poaceae", 3), "Lamiaceae", "Plantaginaceae")
+
+to_print <- cbind(Family = families, Species = species)
+
+knitr::kable(to_print, caption="Species list for demography study", longtable = TRUE, booktabs = T)
+```
+\normalsize
+\end{wraptable}
+
+### Chapter on MCT. MCT identifies two general ways in which species coexistence is promoted: the first is a low overlap in niches, and the second is equality in fitness. Niche overlap fundamentally relates to the strength of feedback loops within and between species: low niche overlap means that feedback loops within species are stronger than those between species. For instance, XXX.  Stabilizing diEquality in fitness refers to the density-independent response of a species to the environment  .
+
+
+## Chapter 3: Considering the consequences of soil microbial communities on plant species dynamics under the modern coexistence framework
+
+Microbes are ubiquitous in nature and can have dramatic impacts on the performance of larger organisms. @Redman_2002 found that when colonized by endophytic fungi in the genus *Curvularia*, the Panic grass *Dichanthelium lanuginosum* could withstand sustained soil temperatures greater than 50$^{\circ}$C. This interaction is critical to understanding the persistence of the grass in geothermal soils where few other plants occur. Conversely, microbes can severly harm plant populations. For instance, the oomycete *Phytophthora ramorum* caused dramatic declines in populations of tanoak (*Lithocarpus densiflorus*) and coast live oak (*Quercus agrifolia*) in coastal California and Oregon in the late 1990s [@Rizzo_2005]. This severe bout of mortality continues to have profound impacts on the community and ecosystem dynamics in those systems [@Cobb_2013]. Theoretical and empirical advances in the last two decades have highlighted that microbes can also have subtler mechanisms for effecting profound changes in plant communities. For example, @van_der_Putten_1993 suggested that plant succession in foredune communities is driven by the relative promotion of later-successional plant species in soils that harbor a microbial community cultivated by earlier-successional plants. In a generalized theoretical framework that has stimulated a great deal of research, @Bever_1997 showed how feedback loops between plants and soil microbes ("plant-soil feedbacks", or PSFs) could permit the coexistence of competing plant species. In short, plant-microbe interactions have the potential to dramatically influence the outcomes of plant species interactions and community assembly. 
+
+But how important are these effects in comparison to the competitive effects that are the subject of traditional coexistence and commuinty assembly theory? We cannot answer this question without a framework that simultaneously considers the effects of both mechanisms. For the third chapter of my dissertation, I propose to demonstrate that the effects of plant-microbe interactions can be considered jointly with the effects of resource competition under the competition-predation framework of @Chesson_2008 and critically review the empirical work conducted under the plant-soil feedback framework of @Bever_1997 in this new context. Fundamental to this reframing is the fact that microbes can influence plants in ways that are independent of any feedbacks (i.e. some microbial contexts always benefit or always harm plant species, regardless of plant species density), and via feedbacks (i.e. the impacts of some microbes on plant species may change with plant species density). Here I briefly review the state of PSF research, summarize @Chesson_2008's coexistence framework, and begin to show how the former can be integrated into the latter. 
+
+**State of plant-soil feedback literature**: Plants can alter both biotic and abiotic characteristics of the soil. Plants that later grow in those soils will be responding to the changes- this cyclical relationship is the basis of plant-soil feedbacks (PSFs). @Bever_1997 showed that if the effects of the soil community cultivated by a plant species $A$ are more negative to the population growth rate of species $A$ than the growth rate of plant species $B$, and vice-versa (i.e. more negative intra-specific effects than inter-specific effects), then PSFs can promote species coexistence. Alternatively, positive PSFs can drive competitive exclusion by preferrentially promoting the performance of the abundant species. This framework has inspired many studies (a Web of Science search for titles containing "plant-soil feedback*" yielded 171 results overall and 73 in 2015-2017 alone) which have documented a diversity of positive, negative, and neutral effects of PSFs. 
+
+Despite such extensive experimentation, it remains difficult to predict the importance of PSFs: their impacts seem to be highly species- and environment-specific [@van_der_Putten_2016]. For example, @Smith_Ramesh_2017 predict that PSFs are less important for coexistence in higher nutrient sites where plants can have high immunity and produce more defence compounds, whereas @van_der_Putten_2016 predict that the higher performance of pathogens in higher nutrient sites will increase the importance of negative PSFs. Additionally, most experimental work is conducted under highly controlled greenhouse settings, and it is difficult to translate these results into the importance of PSFs in nature [@van_der_Putten_2016]. Finally, an important limitation of this framework from the perspective of coexistence theory is that it focuses solely on one set of processes that might promote coexistence (namely, stabilizing niche differences) but fails to incorporate potential effects of microbes on fitness differences. Reframing plant-soil interactions in modern coexistence theory may highlight heretofore overlooked parameters and suggest avenues of research to start building generalities. 
+
+**Overview of competition/predation framework**: That shared natural enemies can change the outcome of strict resource competition has been long understood in ecology as "apparent competition" [@Holt_1977]. @Chesson_2008 showed how the effects of apparent competition can affect coexistence in much the same way as competitive differences. If natural enemies of the focal species are specialists
+
+ocal species are soecualis specialists, then intra-specific feedback loops are stronger than inter-specifiic feedback loops and coexistence is promoted via lower niche overlap. On the other hand, physiological tradeoffs  between defence against natural enemies and rates of reproduction can promote coexitence of the focal species via equalized fitnesses [@Chesson_2012]. @Chesson_2008 derived equations to quantify
+
+
+asasd
+### Summary of Chesson 2008
+
+$$\frac{1}{N_j}\frac{dN_j}{dT} = \sum_l c_{jl}v_lR_l - \sum_m a_{jm}P_m-\mu_j$$
+
+$$\frac{1}{R_l}\frac{dR_l}{dT} = r_l(1-\alpha_l R_l) - \sum_j N_jC_{jl}$$
+
+$$\frac{1}{P_m}\frac{dP_m}{dT} = r_m(1-\alpha_m P_m) + \sum_j Wa_{jm}P_m$$ 
+
+$$\rho = \frac{ \sum_{l} \frac{C_{jl}V_{l}C_{kl}}{r_l^R\alpha_I^R} + \sum_{m} \frac{a_{jm}wa_{km}}{r_m^P\alpha_m^P}}{\sqrt{\left( \sum_l\frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} +  \sum_l\frac{a_{jm}^2w}{r_m^P\alpha_m^P}\right)\left( \sum_l\frac{c_{kl}^2v_l}{r_l^R\alpha_l^R} +  \sum_l\frac{a_{km}^2w}{r_m^P\alpha_m^P}\right )}}$$    
+
+
+$$\kappa_j = \frac{\sum_l \frac{C_{jl}v_l}{\alpha_l^R}-\sum_m\frac{a_{jm}}{\alpha_m^P} - \mu_j}{\sqrt{\left(\sum_l \frac{c_{jl}^2v_l}{r_l^R\alpha_l^R} + \sum_m \frac{a_{jm}^2w}{r_m^P\alpha_m^P} \right)}}$$
+

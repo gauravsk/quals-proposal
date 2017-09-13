@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.27)  10 SEP 2017 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.27)  12 SEP 2017 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -659,6 +659,12 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen157
 \l_MT_above_shortintertext_sep=\dimen158
 \l_MT_below_shortintertext_sep=\dimen159
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip64
+\bibsep=\skip65
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count129
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -675,7 +681,7 @@ Package graphics Info: Driver file: pdftex.def on input line 95.
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks29
-\minrowclearance=\skip64
+\minrowclearance=\skip66
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -695,7 +701,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen162
 \WF@size=\dimen163
-\c@WF@wrappedlines=\count129
+\c@WF@wrappedlines=\count130
 \WF@box=\box35
 \WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
@@ -752,6 +758,18 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip67
+\f@ncyO@elh=\skip68
+\f@ncyO@erh=\skip69
+\f@ncyO@olh=\skip70
+\f@ncyO@orh=\skip71
+\f@ncyO@elf=\skip72
+\f@ncyO@erf=\skip73
+\f@ncyO@olf=\skip74
+\f@ncyO@orf=\skip75
+) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
@@ -765,7 +783,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen169
 \caption@hangindent=\dimen170
 )
-\c@ContinuedFloat=\count130
+\c@ContinuedFloat=\count131
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -780,37 +798,37 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headfont=\toks33
 \thm@notefont=\toks34
 \thm@headpunct=\toks35
-\thm@preskip=\skip65
-\thm@postskip=\skip66
-\thm@headsep=\skip67
+\thm@preskip=\skip76
+\thm@postskip=\skip77
+\thm@headsep=\skip78
 \dth@everypar=\toks36
 )
-\c@theorem=\count131
-\c@lemma=\count132
-\c@definition=\count133
-\c@corollary=\count134
-\c@proposition=\count135
-\c@example=\count136
+\c@theorem=\count132
+\c@lemma=\count133
+\c@definition=\count134
+\c@corollary=\count135
+\c@proposition=\count136
+\c@example=\count137
 (./outline.aux)
 \openout1 = `outline.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 123.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -849,33 +867,33 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 122.
+Package hyperref Info: Link coloring ON on input line 123.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count137
+\c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 (./outline.out) (./outline.out)
 \@outlinefile=\write3
 \openout3 = `outline.out'.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
+\scratchcounter=\count139
 \scratchdimen=\dimen171
 \scratchbox=\box37
-\nofMPsegments=\count139
-\nofMParguments=\count140
+\nofMPsegments=\count140
+\nofMParguments=\count141
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count141
+\MPscratchCnt=\count142
 \MPscratchDim=\dimen172
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
 \everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -890,137 +908,155 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 123.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <15> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 138.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 138.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 139.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 139.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <11> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 138.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 140.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 160.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 161.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <img/background-image.pdf,
  id=67, 352.31625pt x 354.32375pt>
 File: img/background-image.pdf Graphic file (type pdf)
 <use img/background-image.pdf>
-Package pdftex.def Info: img/background-image.pdf used on input line 241.
+Package pdftex.def Info: img/background-image.pdf used on input line 246.
 (pdftex.def)             Requested size: 199.16928pt x 200.3014pt.
-[2
-
- <./img/background-image.pdf>] [3]
-Overfull \hbox (18.76303pt too wide) in paragraph at lines 355--356
-\T1/ptm/m/it/10.95 Additional col-lab-o-ra-tors: Andy Klein-hes-selink (UCLA); 
-Jonathan Levine (ETH-Zurich); Emily Curd (UCLA/Cal
+[2 <./img/background-image.pdf>] [3]
+Overfull \hbox (3.3238pt too wide) in paragraph at lines 360--361
+\T1/ptm/m/it/10.95 Additional col-lab-o-ra-tors: Emily Curd (UCLA); Andy Klein-
+hes-selink (UCLA); Jonathan Levine (ETH-Zurich) 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 42
-0.
+[4] <img/ch01-hypotheses.pdf, id=107, 1095.09125pt x 350.30875pt>
+File: img/ch01-hypotheses.pdf Graphic file (type pdf)
+<use img/ch01-hypotheses.pdf>
+Package pdftex.def Info: img/ch01-hypotheses.pdf used on input line 446.
+(pdftex.def)             Requested size: 469.75502pt x 150.27168pt.
+[5 <./img/ch01-hypotheses.pdf>]
+Overfull \hbox (8.16682pt too wide) in alignment at lines 457--481
+ [] [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 48
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 42
-0.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 48
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 42
-0.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 48
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 42
-0.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 48
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 420
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 487
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 420.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 487.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 420.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 487.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 420.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 487.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 420.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 487.
+[6
+
+]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 420.
-[4
-
-] <img/ch01-hypotheses.pdf, id=104, 1095.09125pt x 350.30875pt>
-File: img/ch01-hypotheses.pdf Graphic file (type pdf)
-<use img/ch01-hypotheses.pdf>
-Package pdftex.def Info: img/ch01-hypotheses.pdf used on input line 446.
-(pdftex.def)             Requested size: 469.75502pt x 150.27168pt.
-
-Overfull \hbox (8.16682pt too wide) in alignment at lines 456--479
- [] [] 
- []
-
-[5 <./img/ch01-hypotheses.pdf>] [6] <img/ch1-fig2.png, id=144, 1960.99068pt x 1
-000.62422pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 584.
+[7] <img/ch1-fig2.png, id=157, 1960.99068pt x 1000.62422pt>
 File: img/ch1-fig2.png Graphic file (type png)
 <use img/ch1-fig2.png>
-Package pdftex.def Info: img/ch1-fig2.png used on input line 628.
+Package pdftex.def Info: img/ch1-fig2.png used on input line 631.
 (pdftex.def)             Requested size: 469.75502pt x 239.69667pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 629.
-[7 <./img/ch1-fig2.png>] [8] [9] <img/ch2-results.png, id=163, 2400.9161pt x 96
-0.36644pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 632.
+[8 <./img/ch1-fig2.png>] [9] [10] <img/ch2-results.png, id=176, 2400.9161pt x 9
+60.36644pt>
 File: img/ch2-results.png Graphic file (type png)
 <use img/ch2-results.png>
-Package pdftex.def Info: img/ch2-results.png used on input line 816.
+Package pdftex.def Info: img/ch2-results.png used on input line 810.
 (pdftex.def)             Requested size: 469.75502pt x 187.8935pt.
-[10 <./img/ch2-results.png>] [11]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 944.
+[11 <./img/ch2-results.png>] [12
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 923.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 923.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 923.
+[13]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 940.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [12]
-Overfull \hbox (32.17pt too wide) in paragraph at lines 992--1005
+) [14]
+Overfull \hbox (32.17pt too wide) in paragraph at lines 990--1003
  [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1005.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1003.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1005.
-[13] [14] [15
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1003.
+pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1069 ...dlikar. He inspires me in so many ways.}
+                                                   [15
 
-] [16] [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1329.
+] [16
+
+] [17] [18] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1327.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1327.
 (./outline.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1327.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1327.
 
 Package rerunfilecheck Info: File `outline.out' has not changed.
 (rerunfilecheck)             Checksum: 432BF7328616D69ADA95518E46FE1A80;3496.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1329.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1327.
  ) 
 Here is how much of TeX's memory you used:
- 13307 strings out of 494953
- 189050 string characters out of 6180977
- 283972 words of memory out of 5000000
- 16283 multiletter control sequences out of 15000+600000
- 73129 words of font info for 110 fonts, out of 8000000 for 9000
+ 13808 strings out of 494953
+ 195025 string characters out of 6180977
+ 290426 words of memory out of 5000000
+ 16763 multiletter control sequences out of 15000+600000
+ 91730 words of font info for 141 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,11n,49p,817b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,49p,817b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/gsk/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk>{/usr/share
 /texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
@@ -1032,10 +1068,10 @@ vetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on outline.pdf (17 pages, 2319018 bytes).
+Output written on outline.pdf (18 pages, 2319224 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 90 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

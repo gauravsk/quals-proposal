@@ -20,30 +20,51 @@ Good morning everyone, thanks all for being here and for being on my dissertatio
 
 # Introduction
 ## Slide 2-4
-I grew up in India with a love for the diversity of tropical rainforests, I enjoyed learning the local names and uses of all the tree species near my grandparent's farm, and was often struck by how many names there were to remember! As my childhood love for nature matured into a scientific interest in how diversity is generated and maintained, I came to realize that there are fundamental physical and biological phenomena structuring plant diversity- in systems as varied as coastal dune communities of annual forbs, <click> and deserts home to beautifully adapted succulents. One emergent phenomenon common to all of these communities is the co-occurrence of many species of plants.
+I grew up in India with a love for the diversity of tropical rainforests, I enjoyed learning the local names and uses of all the tree species near my grandparent's farm, and was often struck by how many names there were to remember! As my childhood love for nature matured into a scientific interest in how diversity is generated and maintained, I came to realize that there are fundamental physical and biological phenomena structuring plant diversity- in systems as varied as coastal dune communities of annual forbs, <click> and deserts home to beautifully adapted succulents. There's a lot of similar processes taking place in all of these systems, and one emergent phenomenon common to all of these communities is the co-occurrence of many species of plants.
 
-## Slide 5
+## Slide 5-13
+The structure of these communities is influenced by many processes. Among them are evolution, which shapes the regional species pool and drives a lot of broad biogeographic patterns;
 
-Although coexistence theory is not the be-all, end-all of understanding biodiversity and community dynamics, it offers a nice framework in which to investigate how species interact. Contemprary coexistence theory, inspired in large part by the work of Peter Chesson, frames coexistence as an outcome of two types of differences between species. First are the so-called "Fitness differences"- these are differences that confer one species a density-independent advantage over the other. Tolerance of a generalist predator is an example- all else being equal, the less susceptible species is expected to win over the species that is more susceptible to the predator. The second type of differences are dubbed "stabilizing niche differences" -these are differences between species that cause a species to limit its own population growth more than that of its competitor. Differences in the timing of resource use, for example, can drive stabilizing niche differences.
+seed dispersal- and here I mean both dispersal within a community that might influence the local occurrence of species and the longer-range dispersal that determines which members of the regional species pools end up in the community;
 
-To repeat, then, fitness differences drive competitive exclusion, whereas niche differences promote coexistence, and for a pair of species to coexist, the stabilizing niche differences between them must overcome any fitness differences. 
+multi-trophic interations- here I am showing a deer to indicate herbivory, but these could also be mutualistic interactions, for example between acacia plants and the ants that inhabit their domatia and protect them from herbivores; 
 
-```{r fig-margin, fig.margin = TRUE, fig.cap = "Coexistence is possible when stabilizing niche differences overcome fitness differences", fig.width=3.5, fig.height=3.5, cache=TRUE, echo = F}
-knitr::include_graphics("/home/gsk/grad/quals/proposal/img/background-image.pdf")
-```
+local environmental variation- here indicated by a gradient of orange dots in the soil, but can also be a temporal variation; interspecific interactions between the plant species- we generally focus on competition here but mutualisms may also be at play; 
 
-## Slide 6-7
+variation within species- here I am indicating that with a slightly brown individual of this species; 
 
-What determines the magnitude of niche and fitness differences? We can ask this question for any pair of species and ask- what are the niche and fitness differences between these two forbs? or between these two trees? or between these to yuccas? Obviously, it is hard to achieve generality in this way. One way to bring generality is to investigate species coexistence as a consequence of species ecological strategies, as summarized by their functional traits. For example, do differences in root structure drive niche differences because species with dissimilar roots access distinct resource pools? Do differences in leaf size drive fitness differences because larger-leaved species can intercept more light for photosynthesis than smaller-leaved species? This generality is the promise of trait based ecology, but such links as I just described are only recently starting to emerge. As our understanding of this question develops, an important question is to understand how much intra-specific variation in these traits influences the outcome of coexistence. The real power in trait-based ecology lies in being able to sample indviduals from a species and infer community level understanding, so this is a core issue. In part of my research, I plan to extend our understanding of how trait differences correlate with the demographic processes that belie coexistence in heterogeneous landscapes. 
+feedbacks between plants and the abiotic environment- in other words, plants can use up resources or release allelopathic chemicals to change soil chemistry or structure; 
+
+and finally, feedbacks betwen plants and the soil biotic environment, namely the microbial community. I want to spend some time on this interaction because although humankind has kind of known about it for a while and used it as the basis of crop rotation, the role of this interaction in community ecology has really emerged quite recently, in the last two decades or so. In a recent review paper Noah Fierer highlighted that a single hectare of soil often house more than a thousand kilograms worth of microbial biomass- so these are really quite ubiquitous. And they might have profound effects on plant communities- for example in 2010, Mangan et al. suggested that the strength of plant-soil feedbacks for six tropical tree species could actually explain variation in those species' abundance in the forest plot at Barro Colorado Island. 
+
+## Slide 14-15
+
+Of these interactions, I aim to focus on these four aspects- and specifically, I propose to do research that can help us understand how to examine the importance of these processes in any given community, rather than focusing on their importance in a given community. Therefore, I mainly aim to do experimental and theoretical work that can be interpreted in light of ecological first principles. I aim to do so by studying these four interactions in the context of modern coexistence theory, which, although it's a be-all, end-all for explaining community sturcture, provides us a nice framework to investigate the influence of each of these mechanisms.
+
+## Slide 16
+
+Contemprary coexistence theory, inspired in large part by the work of Peter Chesson, frames coexistence as an outcome of two types of differences between species. First are the so-called "Fitness differences"- these are differences that confer one species a density-independent advantage over the other. Tolerance of a generalist predator is an example- all else being equal, the less susceptible species is expected to win over the species that is more susceptible to the predator. The second type of differences are called "stabilizing niche differences" -these are differences between species that cause a species to limit its own population growth more than that of its competitor. Differences in the timing of resource use, for example, can drive stabilizing niche differences.
+
+The key insight here is that for a pair of species to coexist, the stabilizing niche differences between them must overcome any fitness differences. 
+
+## Slide 17-18
+
+What determines the magnitude of niche and fitness differences? We can ask this question for any pair of species and ask- what are the niche and fitness differences between these two forbs? or between these two trees? or between these to yuccas? Obviously, it is hard to achieve generality in this way. One way to bring generality is to investigate species coexistence as a consequence of species ecological strategies, as summarized by their functional traits. For example, do differences in root structure drive niche differences because species with dissimilar roots access distinct resource pools? Do differences in leaf size drive fitness differences because larger-leaved species can intercept more light for photosynthesis than smaller-leaved species? This generality is the promise of trait based ecology, but such links as I just described are only recently starting to emerge. 
+
+Since variation in space is thought to be an important driver of coexistence, I specifically aim to test whether functional trait differences between species helps us understand whether their coexistence is stabilized by spatal environmental variation.
+
+## Slide 19
+
+As our understanding of this question develops, an important detail is to understand how much intra-specific variation in these traits influences the outcome of coexistence. The real power in trait-based ecology lies in being able to sample indviduals from a species and infer community level understanding, so this is a core issue. 
 
 
-## Slide 8
+## Slide 20
 
-Although ecologists have long understood that the way in which species interact with resources can influence their performance and competitive interactions, a recent revolution in our field has highlighted that there is another class of interactions shaping plant ecology: those are the interactions between plants and microorganisms in the soil. In a recent review paper, Noah Fierer highlighted that a single hectare of soil can harbor more than a thousand kilograms worth of microbial biomass. There is mounting evidence that these microbes can have dramatic effects on plant commuity dynamics. For example, in 2010 Mangan et al. showed that the abundance of six tropical tree species at the forest plot in Barro Colorado Island is well correlated with how strongly the survival of saplings of a species is hindered by microbes cultivated growing in the soil near adults of that species. 
+Interactions between soil microbes and plants can also influence fitness and stabilizing niche differences. In nature, interactions between plants and microbes play out simulataneously with the resource competition dynamics that are the traditional focus of plant ecology. 
 
-In nature, interactions between plants and microbes play out simulataneously with the resource competition dynamics that are the traditional focus of plant ecology. However, the two mechanisms are generally considered independently in the literature. To make sense of which processes are important in structuring natural communities, we need to better understand the relative importance of these two mechanisms, and that will be the focus of my final chapter.
+However, in the literature, the two mechanisms are generally considered independently To make sense of which processes are important in structuring natural communities, we need to better understand the relative importance of these two mechanisms, and that will be the focus of my final chapter.
 
-## Slide 9
+## Slide 21
 
 This leads me to the three questions I hope to address with my dissertation:
 
@@ -51,127 +72,188 @@ This leads me to the three questions I hope to address with my dissertation:
 2. How does intra-specific trait variation influcence competitive dynamics?  
 3. How can we jointly consider the consequences of resource competition and plant-microbe interactions in a unified framework?   
 
-## Slide 10
+## Slide 22
 
 To address the first two question I am doing field research in Sedgwick Reserve, a UC-NRS site in the Santa Ynez valley of Central Coastal California. Sedgwick boasts a diverse community of annual plants that occur over a heterogeneous landscape encompassing variation in topology and edaphic properties. For question 3 I propose to take a step back from empirical work and frame the relative effects of microbes and resource competition in the competition-predation framework of Chesson & Kuang 2008 and review existing plant-microbe literature in this framework.
 
 --------------
 
-## Slide 11- Question 1
+## Slide 23- Question 1
 
 Understanding the links between species traits and their demography is a crucial link in using traits to understand competitive dynamics and reach the full predictive potential of trait-based ecology. 
 
-## Slide 12-14
+## Slide 25-27
 Nature is often stikingly patchy in space, and theoretical and empirical observations suggest that variation in how species respond demographically to that variation is an important driver of coexistence. Although the mathematical requirements for spatial variation to stabilize coexistence are quite complex, we can focus on one empirically and intellectually straightforward component: the requirement that for spatial variation to drive coexistence, species must have idiosyncratic demographic responses to the same environmental variation. If two species have an identical response- in other words, if the sites good for one species are good for the other, and vice-versa, then spatial variation alone is unlikely to drive their coexistence.
 
-## Slide 15-18
+## Slide 28
 
-Therefore, to understand how functional traits influence competitive dynamics in a spatially heterogeneous community, we can ask three questions to explore whether species functional traits are predictive of how their demography changes across environments. The first is kind of a zero-eth question, from which the other two follow: 
+Therefore, to understand how functional traits influence competitive dynamics in a spatially heterogeneous community, we can ask these two questions to explore whether species functional traits are predictive of how their demography changes across environments. 
  
-0. Do species respond differently to environmental variation?  
-1. Which environmental factors drive these responses?  
+1. Which environmental factors drive variation in species responses to spatial heterogeneity?
 2. Which traits mediate species response to the environmental drivers?  
  
-<Describe some hypotheses>
 
-## Slide 19-21
-These are the question we sought to address in an experiment we conducted in the 2015-2016 growing season to quantify the demography of 17 annual plant species at 24 experimental plots within sedgwick. We planted the experiment in a way that allowed us to parameterize a simplified model of annual plant population growth. In this model, populations grow as a function of how well a species survives as seeds in the seedbank, how well it germinates, and how well each germinant performs in the absence of competition. The rate of population growth is decreased by the number of competitors each germinant faces at a site and how sensitive it is to competition. 
+## Slide 29
+These are the question we sought to address in an experiment we conducted in the 2015-2016 growing season to quantify the demography of 17 annual plant species at 24 experimental plots within sedgwick. 
 
-## Slide 22
-To determine which environmental variables might be driving variable species responses, we characterized a suite of soil chemical, physical and biological properties at each site. We sent samples to a company for chemical and physical analysis, measured gravimetric soil water content twice in the growing season, and had iButtons logging air temperature across the growing season. We also wanted to know whether there is turnover in the soil microbial community across our sites to which the plants might be responding. To characterize this axis of variation, we extracted total DNA, and PCR amplified 16s, ITS, and 18s regions to characterize the bacterial, fungal, and small eukaryote communities.
+## Slide 30
+We planted the experiment in a way that allowed us to parameterize a simplified model of annual plant population growth. Specifically, at each site, we planted seeds in a spaced out grid that let us estimate germination rate and allowed an individual to complete its life cycle without competitors, and also planted seeds in a mixed community of competitors.  
 
-## Slide 23
-To determine which plant traits mediate species response to environmental variation, we measured a set of traits that are commonly measured in the plant fucntional ecology literature. At one site, my advisor Nathan Kraft had measured a suite of leaf, root, seed, and whole-plant functional traits on twelve of the seventeen species used in this experiment. I rounded out the dataset by measuring the same traits on the five remaining species. In addition I have measured leaf osmotic potential, which XXXX (Talk to Ian about wording), on all of the non-grass species in the experiment, and will measure this trait on the grasses in the coming growing season. There are reasons to expect these traits to predict how species respond to environmental variation- for instance we might expect that species with more drought tolerant leaves have a competitive advantage in drier sites but fare poorly in sites with more available water, assuming that there is a tradeoff between drought tolerance and maximum growth rate.
+## Slide 31
+In this model, populations grow as a function of how well a species survives as seeds in the seedbank, how well it germinates, and how well each germinant performs in the absence of competition. The rate of population growth is decreased by the number of competitors each germinant faces at a site and how sensitive it is to competition. 
 
-## Slide 24
+## Slide 32
+The seventeen species list we used in this experiment came from eight families and seven orders from across the tree of life, including several Asteraceae in the top row, and several Poaceae in the bottom row. 
+
+## Slide 33
+
+The 24 plots we worked in were spread across the reserve, with a cluster of 16 plots in the north edge of the reserve. The plots we worked in varied in NMDS axis 1 in their chemistry, ranging from plots with very high calcium to magnesium ratios and also high nitrate levels, to those with very low ratios. That makes sense, because some of the plots are on serpentine soils characterzied by low Ca:Mg ratio.
+
+We also wanted to know whether there is turnover in the soil microbial community across our sites to which the plants might be responding. To characterize this axis of variation, we extracted total DNA, and PCR amplified 16s, ITS, and 18s regions to characterize the bacterial, fungal, and small eukaryote communities.
+
+## Slide 34
+To determine which plant traits mediate species response to environmental variation, we measured a set of traits that are commonly measured in the plant fucntional ecology literature. At one site, my advisor Nathan Kraft had measured a suite of leaf, root, seed, and whole-plant functional traits on twelve of the seventeen species used in this experiment. I rounded out the dataset by measuring the same traits on the five remaining species. In addition I am measuring leaf osmotic potential, which is a strong predictor of the leaf drought tolerance, on all of the non-grass species in the experiment, and will measure this trait on the grasses in the coming growing season. 
+
+These traits generally relate to the plant's ecological strategy, especially on the leaf economics spectrum. Globally, plants with higher SLA tend to also have higher maximum photosynthetic and respiration rates, and lower SLA are characteristic of slower growing or stress tolerant species. There are reasons to expect these traits to predict how species respond to environmental variation- for instance we might expect that species with more drought tolerant leaves have a competitive advantage in drier sites but fare poorly in sites with more available water, assuming that there is a tradeoff between drought tolerance and maximum growth rate.
+
+## Slide 35
  
-As a test of the zeroeth question of whether plants have dissimilar responses to environmental variation, I simply plotted the performance of two species against each other and calculated a correlation value. Here I am plotting a histogram of those correlations - a negative number would mean that the two species in a pair perform best at opposite sites, a correlation of 1 means that both species do well at the same sites and poorly at the others, and an intermediate value means that there is some idiosyncracy to the species responses. We found that species pairs tended to be uncorrelated in how they respond to environmental variation- this means that we have satisfied one ingredient for spatial variation to promote species coexistence. 
+For spatial environmental variation to matter for coexistence, species there needs to be variation in how species respond to environmental variation. To test for this I calculated the correlation coefficient between species performance- here measured as germination rate, and here I am plotting a histogram of those correlations - a negative number would mean that the two species in a pair perform best at opposite sites, a correlation of 1 means that both species do well at the same sites and poorly at the others, and an intermediate value means that there is some idiosyncracy to the species responses. We found that species pairs tended to be uncorrelated in how they respond to environmental variation- this means that we have satisfied one ingredient for spatial variation to promote species coexistence. 
 
-## Slide 25  
-Our sites vary primarily in their soil chemistry and texture. The overwhelming drivers of the first NMDS axis are the soil Calcium and Magnesium concentrations, which make sense because some of the areas in our landscape have serpentine soils. The second axis of variation primarily separates deep, clay-y sites from shallower, sandier sites. 
+## Slide 36
 
-## Slide 26-27 
+To ask which components of environmental variation drive variation in species demography and which traits mediate those responses, I propose to perform Generalized linear mixed models adapted from the Jamil et al. 2012, in which performance is modeled as a function of species, the species' traits, the environmental conditions of a site, and an interaction between the species traits and how they respond to the enviroment. 
 
-To ask which components of environmental variation drive variation in species demography and which traits mediate those responses, I propose to perform Generalized linear mixed models adapted from the Jamil et al. 2012, in which performance is modeled as a function of species, the species' traits, the environmental conditions of a site, and an interaction between the species traits and how they respond to the enviroment. When a trait is an important driver of species response to a given gradient, we should see that this interaction term contributes significantly to explaining variance. Results from preliminary analyses hint at some trait-based drivers of species response. For instance, four of the five smallest seeded species germinate better in soils that are sandier and shallower, whereas all other species have higher germination rates in deeper, clay-er soil. This may be because XXXXXX
 
-## Slide 28  
+## Slide 37
+This model lets us address the two questions I had posed up front- q1 with the environment term, 
+
+## Slide 38 
+
+and q2 with the interaction term.
+
+Results from preliminary analyses hint at some trait-based drivers of species response. For instance, four of the five smallest seeded species germinate better in soils that are sandier and shallower, whereas all other species have higher germination rates in deeper, clay-er soil. 
+
+## Slide 39 -42
 
 In summary,  in this chapter I will experimentally explore which are the environmental parameters that drive demographic variation, and which traits mediate species responses. Although the drivers of selection will undoubtedly vary across different communities, this study will help the field think about how to interpret patterns of trait turnover in nnatural communities and which traits to focus on when only a few can be sampled.
 
 
 ------------
 
-## Slide 29
+## Slide 43
 
 So far in my Chapter 1, and in the field of plant trait ecology generally, functional traits are typically used to summarize ecological strategies at the species level. But we know that there is variance in trait values within species. In this chapter, I propose to study how such intraspecific trait variation (which I might call ITV) influences coexistence outcomes.
 
-## Slide 30-31
+## Slide 44-46
 
-We know that individuals within a species can have vastly different phenotypes. For example, shade leaves tend to be larger and thinner than sun-exposed leaves of the same individuals, and population genetic differences within a species may cause species to have different traits in different environments. As the demographic properties we have been discussion here emerge from interactions between individuals, it is important to consider how intra-specific trait variation, or ITV, can influence coexistence of species. 
+There can be substantial variation of functional traits within a species. Such ITV has many sources. For example, shade leaves tend to be larger and thinner than sun-exposed leaves of the same individuals. Population genetic differences within a species may cause species to have different traits in different environments. 
 
-## Slide 32-33
-Some authors have suggested that traits of individuals may shift in ways that minimize fitness differences or maximize niche differences so that coexistence is promoted. On the other hand, Hart et al. recently developed a theoretical model that accounts for individual-level variation in demographic traits and showed that such ITV can act to promote competitive exclusion of species due to nonlinear averaging. This was a very compelling result, but Hart et al.'s study had two important limitations. First, they work with variation in demographic rates such as the sensitivity of an individual to competitors, whereas most empericists measure varitibility in functional traits. Second, Hart et al. assumed a well-mixed commuity in which there was no structure to the trait variation- in other words, the traits of an individual were randomly drawn from a species distribution. This is unlikely to occur in nature, as we know that traits tend to change predictably. 
+In a meta-analysis, Siefert et al. recently reported that on average a quarter of the variation in traits within communities is driven by ITV. 
 
-As most trait based studies of community ecology rely pn the validity of the assumption that species mean traits are predictive of competitive dynamics that play out between individuals, it is important for the field to have a better understanding of how ITV in functional traits influences coexistence. 
+As the demographic properties that are at the heart of coexistence emerge from interactions between individuals, it is important to consider how intra-specific trait variation, or ITV, can influence coexistence of species. 
 
-## Slide 34
+## Slide 47-49
+Some authors have suggested that traits of individuals may shift in ways that minimize fitness differences or maximize niche differences so that coexistence is promoted, as in the black arrows here. 
 
-For the second chapter of my dissertation I propose to address these questions in the annual plant community at Sedgwick, for which Kraft et al. 2015 have developed trait-based models of niche and fitness differences. In this study I ask two questions: 1. What is the structure of trait variation across the environmental gradient over which we work at Sedgwick? and 2) How do traits respond to competitive neighborhoods, and how might this influence coexistence outcomes?  
+On the other hand, Hart et al. recently developed a theoretical model that accounts for individual-level variation in demographic traits and showed that such ITV can act to promote competitive exclusion of species due to nonlinear averaging. This was a very compelling result, but Hart et al.'s study had two important limitations. First, they work with variation in demographic rates such as the sensitivity of an individual to competitors, whereas most empericists measure varitibility in functional traits. Second, Hart et al. assumed a well-mixed commuity in which there was no structure to the trait variation- in other words, the traits of an individual were randomly drawn from a species distribution. This is unlikely to occur in nature, as we know that traits tend to change predictably. Therefore, the consequences of observed ITV in natural communities still remains murky.
 
-## Slide 35-36
+As most trait based studies of community ecology rely on the validity of the assumption that species mean traits are predictive of competitive dynamics that play out between individuals, it is important for the field to have a better understanding of how (if at all) ITV in functional traits influences coexistence.
+
+As Kraft et al. have developed trait-based models of niche and fitness differences for the Sedgwick annual plant community, it is an ideal community in which to ask the following questions.
+
+## Slide 50
+
+1. What is the structure of trait variation across the environmental gradient over which we work at Sedgwick? In other words, do traits vary randomly across the landscape, or are there patterns to how traits change within a species? and 2) How do traits respond to competitive neighborhoods, and how might this influence coexistence outcomes? In other words, do plants shift their ecological strategies based on their competitive neighborhood to change the outcome of their interaction?  
+
+## Slide 51-52
 
 To address these questions we planted seeds of 20 species at the same 24 plots we had used for the Chapter 1 experiments. At each site seeds were planted 15cm away from each other so that plants were growing at a very low density of competitors. Additionally, at one site, we planted the same set of species in high-density competition plots. 
 
-## Slide 37
-We measured the leaf size, specific leaf area, and leaf dry matter content of three leaves from each individual, measured the hight and canopy shape index of each individual, and stored washed fine roots of in ethanol for analysis this fall to measure their specific root lengths. For this study we processed over 800 individual plants and over 2400 leaves for an average sampling of 40 individuals per species.
+## Slide 53
+We measured the leaf size, specific leaf area, and leaf dry matter content of three leaves from each individual, measured the hight and canopy shape index of each individual, and stored washed fine roots of in ethanol for analysis this fall to measure their specific root lengths. We chose these traits because they are known to vary across environmental gradients both within and between species, and because they are commonly measured on large numbers of individual due to their relative ease of measurement. 
 
-## Slide 38
+For this study we have to-date processed over 800 individual plants and over 2400 leaves for an average sampling of 40 individuals per species.
+
+
+## Slide 54-55
 To test for the effects of our treatments on traits, I plan to again fit GLMM models with a similar structure as in Chapter 1. Here, trait values will be modeled as a function of species identity, environmental parameters, and an interaction term. If species have idiosyncratic responses to the environment, then we expect this environmental term to be significant and have strong effect sizes. 
 
-## Slide 39
+## Slide 56
+As a preliminary test of this second question, I conducted a two-way ANOVA to test for the influence of species identity, competitive density, and their interaction on the leaf functional traits measured for this study.
 
-To test for ITV's consequences on coexistence, I will work with the trait-based models of niche and fitness differences that Kraft et al. had developed for this system. First, I will conduct an analysis which, like Hart et al., assumes comlete mixing and no structure to ITV: I will ask if the fitness and niche differences calculated by sampling functional traits of individuals differ from those calculated from species means, and ask if coexistence outcomes of species pairs flip from coexistence to exclusion or vice-versa. Second, I will specifically ask if the trait changes we observe in response to competition can flip the outcome of competition. 
+## Slide 57 
 
-## Slide 40
+For the next few slides I will show graphs showing the shift in SLA in response to competiton. Here we see that the SLA of LACA shifts to be lower- in other words, a slightly more "resource conservative" leaf, for this species.
 
-As a preliminary test of this second question, I conducted a two-way ANOVA to test for the influence of species identity, competitive density, and their interaction on the leaf functional traits measured for this study. We find strong effects of species and competitive effect for SLA and Leaf Area (DESCRIBE IN WORDS). Importantly, the interaction term was significant in the models for SLA and leaf area, which suggests that species have idiosyncratic trait responses to competition. Therefore, there is potential for trait shifts to change the magnitude of niche and fitness differences. It will be important to perform this analysis in a non-parametric framework to assess its robustness, as variable germination led us to having an imbalanced dataset. 
+## Slide 58 
+But for another species, Euphorbia, we see that SLA goes up in response to competition. For this species pair we're getting higher trait differences when measured in competition.
 
-## Slide 41  
+## Slide 59  
+If we consider a third species, Plantago erecta, we see that the trait difference between plantago and lasthenia is deminished when measured in competition.
 
-As a summary, in this chapter I plan to tackle XXXXXXXX
+## Slide 60
+Obviously I can take up your whole day if I keep doing these pairwise comparisons so I'm going to show the trait responses all at once, and although it's kind of a busy graph, the thing to keep in mind is that there is considerable variance in these slopes. That there is variance in the slopes is captured by the significance of the interaction term of the ANOVA. 
+
+
+## Slide 61 
+
+And in fact we see that the interaction term is significant in the ANOVA for all three leaf traits measured for this study.
+
+From here, we need to take these differences and feed them into the models of pairwise fitness and niche differences built by Kraft et al for the Sedgwick system, and that's what I exactly what I plan to do. 
+
+## Slide 62-64
+As a summary, in this chapter I plan to experimentally tackle the important question of whether individual variation in functional traits can change the magnitude of fitness or niche differences to change the outcome of competition.
 
 ---------------
 
-## Slide 42  
+## Slide 66  
 
 The dynamics of natural communities are complex, being influenced by multiple mechanisms at once. Plant ecologists have recently realized that microbes can effect dramatic changes in plant community dynamics, and in my third chapter, I propose to demonstrate how we can consider the effects of this mechanism in conjunction with the effects of plant competition.  
 
-## Slide 43
+## Slide 67
 
-Microbes are ubiquitous and can have dramatic impacts on plant communities. In 2002, Redman et al. showed that panic grass can withstand sustained soil tempreatures greater than 50 degrees Celsius, but only if its roots are colonized by fungi in the genus Curvularia. As the grass is commonly found growing in geothermal soils near volcanoes in the Western US, this microbial interaction is critical to explaining its distribution. Microbes can also effect profound changes on plant community dynamics through much subtler mechanisms. In a seminal paper that came out about 20 years ago, van der Putten et al. suggested that succession in coastal foredune communities could be driven by the relative promotion of later-successional plant species by the soil microbes cultivated by earlier successional plants. 
+Microbes are ubiquitous and can have dramatic impacts on plant communities. As a dramatic example, in 2002, Redman showed that panic grass can withstand sustained soil tempreatures greater than 50 degrees Celsius, but only if its roots are colonized by fungi in the genus Curvularia. As the grass is commonly found growing in geothermal soils near volcanoes in the Western US, this microbial interaction is critical to explaining its distribution. Microbes can also effect profound changes on plant community dynamics through much subtler mechanisms. In a seminal paper that came out about 20 years ago, van der Putten et al. suggested that primary succession in coastal foredune communities could be the dynamics between plants and microbes. 
 
-## Slide 44  
-Almost concurrently with van der Putten's work, Bever et al. showed with a theoretical model that interactions between plants and the soil microbes they cultivate may promote the coexistence of plant species. The key insight was that plant species coexistence was possible when the soil microbial community cultivated by one species had more negative impacts on population growth of the same species than of the competitor. In the parlance of Modern Coexistence Theory, Bever et al. were proposing a new mechanism for stabilizing niche differences. 
+## Slide 68  
+Twenty years ago, Bever et al. showed with a theoretical model that interactions between plants and the soil microbes they cultivate may promote the coexistence of plant species. The key insight was that plant species coexistence was possible when the soil microbial community cultivated by one species had more negative impacts on population growth of the same species than of the competitor. In the parlance of Modern Coexistence Theory, Bever et al. were proposing a new mechanism for stabilizing niche differences. 
 
-The PSF framework has stimulated considerable empirical research. Numerous studies have been conducted, often in greenhouses, and have found that PSFs may promote, destabilize, or not affect coexistence outcomes. But as I see it, this framework has two important limitations. First, it doesn't account for the fact that microbes may also drive fitness differences; second, studies in this framework test the impacts of plant-soil feedbacks independently of the plant competition dynamics that have long been the focus of traditional plant ecology. Furthermore, it lacks some of the quantitative rigor of modern coexistence theory, and this leads to some lack of clarity in expectations. For example, two recent review papers have proposed competiting hypotheses regarding the importance of PSFs in natural studies. Smith-Ramesh et al. 2017 suggested that PSFs should be less important in nutrient-rich communities than in nutrient-poor communities because plants might have stronger defence capabilities when nutrients are abundant, whereas van der Putten et al. 2016 suggested that PSFs should be most important in nutrient-rich communities becuase XXXXXXX. 
+The PSF framework has stimulated considerable empirical research. Numerous studies have been conducted, often in greenhouses, and have found that PSFs may promote, destabilize, or not affect coexistence outcomes. But as I see it, there is tremendous scope to call on the insights of this framework and Modern Coexistence theory to have a more holistic view of how microbes can affect coexistence. 
 
-## Slide 45  
+For instance, this framework doesn't account for the fact that microbes may also drive fitness differences; second, studies in this framework test the impacts of plant-soil feedbacks independently of the plant competition dynamics that have long been the focus of traditional plant ecology.
+
+## Slide 69
+Furthermore, MCT can bring some quantitative rigor that I think can address some of the ambiguities in the PSF literature right now. For example, two recent review papers have proposed competiting hypotheses regarding the importance of PSFs in natural studies. Smith-Ramesh and Reynolds suggested that PSFs should be less important in nutrient-rich communities than in nutrient-poor communities because plants might have stronger defence capabilities when nutrients are abundant, whereas van der Putten et al. 2016 suggested that PSFs should be most important in nutrient-rich communities where pathogen loads are higher.  
+
+## Slide 70  
 
 For the third chapter of my dissertation, I propose to demonstrate how PSFs can be considered under the modern coexistence theory using a competition-predation framework developed by Chesson and Kuang in 2008. This framework addresses the two shortcomings I mentioned on the previous slide: first, it accounts for contribution of plant-microbe interactions to fitness differences, and second, it calculates both niche and fitness differences as a consequences of the joint effects of natural enemies and resource competition.
 
-## Slide 46 
-Here I am showing the equations for niche and fitness differences from Chesson and Kuang's framework. The details don't matter at this point, but I'd like to highlight that the consequences of microbes, highlighted in red, and those of resources, highlighted in blue, feature in both equations. We can assess the relative importance of one mechanism by tweaking its parameters and keeping the others constant. 
+## Slide 71
+Chesson and Kuang propose a system in which they model the dynamics of focal species, the resources they consume, and their enemies
 
-## Slide 47
-As an example of how this framework can be useful to the field of plant soil feedbacks, we can revisit the competing predictions I had brought up earlier about whether PSFs are more important in nutrient-rich communities or nutrient-poor ones. We can keep all parameters constant expect for those that determine the availability of resources - in this framework, that means changing the parameters $r_l^R$, which is the nutrient replacement rate of nutrient $l$. This theory tells us that the relative importance of plant-soil feedbacks - in other words, the contribution of plant-soil feedbacks- is higher in nutrient-rich communities than in nutrient-poor ones. The insight is that in high nutrient communities, plants aren't being restricted by nutrients, so the parameters that govern community dynamics are those related to the microbes.
+## Slide 72
+The system is fairly straight forward, and I'm happy to discuss parameters later. 
 
-## Slide 48  
+From these, Chesson and Kuang derive equations for the niche and fitness differences between the focal species.
+
+## Slide 73
+Here I am showing the equations for niche and fitness differences from Chesson and Kuang's framework. I'd like to highlight that the consequences of microbes, highlighted in red, and those of resources, highlighted in blue, feature in both equations. We can assess the relative importance of one mechanism by tweaking its parameters and keeping the others constant. 
+
+## Slide 74
+As an example of how this framework can be useful to the field of plant soil feedbacks, we can revisit the competing predictions I had brought up earlier about whether PSFs are more important in nutrient-rich communities or nutrient-poor ones. We can keep all parameters constant expect for those that determine the availability of resources 
+
+## Slide 75
+
+This theory tells us that the relative importance of plant-soil feedbacks - in other words, the contribution of plant-soil feedbacks- is higher in nutrient-rich communities than in nutrient-poor ones. The insight is that in high nutrient communities, plants aren't being restricted by nutrients, so the parameters that govern community dynamics are those related to the microbes.
+
+## Slide 76-78
 
 For my Chapter 3, I plan to further explore this model and reframe plant soil feedbacks in this framework. Investigating this model will mean, for example, studying not only the steady state dynamics but also the transient dynamics that ensue after changing certain state parameters, because those are the variables that are most frequently tested in empirical studies. Another extention I propose to do is to consider the effects of net-positive plant-microbe interactions. This can be done by tweaking the attack rate parameter to be a negative number, so that the plant population benefits from interacting with the microbes. I then conduct a review of the PSF literature in light of which parameters of coexistence have been quantified by experiments to date and highlight the parameters which the theory suggests might be important ones to further investigate. Finally, i will propose and conduct experiments to quantify the parameters and test the predictions of this framework. 
 
-## Slide 49
+## Slide 79
 
-In summary, I plan to use modern coexistence theory as a tool to investigate the diversity of natural communities in my PhD. In Chapters 1 and 2, I propose to extend how we use functional traits, which summarize plant ecological strategies, to study competitive dynamics in plant species. In chapter 3 I consider the effects of microbes, a mechanism of biodiversity maintenance that has yet to receive sufficiently close scrutiny. I hope that this will give me better insight into the diversity I have grown to love.
+In summary, I plan to use modern coexistence theory as a tool to investigate the diversity of natural communities in my PhD. In Chapters 1 and 2, I propose to extend how we use functional traits, which summarize plant ecological strategies, to understand coexistence in variable environments. In chapter 3 I consider the effects of microbes, a mechanism of biodiversity maintenance that has yet to receive sufficiently close scrutiny. I hope that this will give me better insight into the diversity I have grown to love.
 
 ## Acknowledgements
-With that, I'd like to thank the many many people who got me here. Nathan has been all that I can ask for in an advisor, and everyone in the lab has been so supportive. Various people at UCLA have suffered through my XXX. Although they are not listed by name here, I also owe great gratitude to friends and family around the world who have helped me get through some emotionally challenging phases of my PhD.
+
